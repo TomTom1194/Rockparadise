@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +10,52 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+
+html {
+  font-family: "Poppins", sans-serif;
 }
+
+.custom-carousel-btn {
+  width: 60px;
+  height: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.8;
+}
+
+.custom-carousel-btn span {
+  width: 100%;
+  height: 100%;
+  background-size: 80% 80%;
+}
+
+@media (max-width: 768px) {
+  .custom-carousel-btn {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.custom-caption-bottom {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);     /* nền đen mờ */
+  backdrop-filter: blur(5px);              /* hiệu ứng blur */
+  -webkit-backdrop-filter: blur(5px);      /* Safari */
+  padding: 20px;
+  text-align: center;
+  padding: 24px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.carousel-control-prev.custom-carousel-btn {
+  left: 2rem; /* cách lề trái */
+}
+
+.carousel-control-next.custom-carousel-btn {
+  right: 2rem; /* cách lề phải */
+}
+

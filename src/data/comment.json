@@ -1,0 +1,32 @@
+[
+  {
+    "comment_id": 1,
+    "name": "Alice Nguyen",
+    "content": "Absolutely stunning diamond! It sparkles beautifully.",
+    "rating": 5
+  },
+  {
+    "comment_id": 2,
+    "name": "John Tran",
+    "content": "The sapphire is nice but the color was slightly lighter than expected.",
+    "rating": 4
+  },
+  {
+    "comment_id": 3,
+    "name": "Linh Vo",
+    "content": "Excellent quality ruby. Worth every penny!",
+    "rating": 5
+  },
+  {
+    "comment_id": 4,
+    "name": "David Pham",
+    "content": "Great packaging and fast delivery. Will buy again.",
+    "rating": 5
+  },
+  {
+    "comment_id": 5,
+    "name": "Emma Le",
+    "content": "Beautiful gemstone but arrived a day late.",
+    "rating": 3
+  }
+]
