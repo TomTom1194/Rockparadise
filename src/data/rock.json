@@ -6,8 +6,14 @@
     "brand": "Tiffany",
     "size": 1.25,
     "price": 5300.0,
-    "description": "Natural white diamond, VVS1 clarity, excellent cut."
-  },
+    "description": "Natural white diamond, VVS1 clarity, excellent cut.",
+    "mainImage": "https://www.tierra.vn/wp-content/uploads/2024/07/nch1316-1-v-zYNvrr3Dwq.webp",
+    "images": [
+      "https://www.tierra.vn/wp-content/uploads/2024/07/NCH1316-3-V.webp",
+      "https://www.tierra.vn/wp-content/uploads/2024/07/nch1316-2-v-gJ2PxagKSa.webp",
+      "https://www.tierra.vn/wp-content/uploads/2024/07/nch1316-4-v-YgV0crTfI5.webp"
+    ]
+},
   {
     "id": "GEM002",
     "type": "Sapphire",
@@ -15,8 +21,15 @@
     "brand": "Swarovski",
     "size": 2.0,
     "price": 2750.5,
-    "description": "Deep blue sapphire from Sri Lanka with high transparency."
+    "description": "Deep blue sapphire from Sri Lanka with high transparency.",
+    "mainImage": "https://cdn-media.glamira.com/media/product/newgeneration/view/1/sku/domela11/diamond/sapphire_AA/stone2/diamond-sapphire_AAA/alloycolour/yellow.jpg",
+    "images": [
+      "https://cdn-media.glamira.com/media/product/newgeneration/view/2/sku/domela11/diamond/sapphire_AA/stone2/diamond-sapphire_AAA/alloycolour/yellow.jpg",
+      "https://cdn-media.glamira.com/media/product/newgeneration/view/3/sku/domela11/diamond/sapphire_AA/stone2/diamond-sapphire_AAA/alloycolour/yellow.jpg",
+      "https://cdn-media.glamira.com/media/product/newgeneration/view/4/sku/domela11/diamond/sapphire_AA/stone2/diamond-sapphire_AAA/alloycolour/yellow.jpg"
+    ]
   },
+
   {
     "id": "GEM003",
     "type": "Ruby",
@@ -24,8 +37,15 @@
     "brand": "Pandora",
     "size": 1.8,
     "price": 3200.0,
-    "description": "Natural pigeon blood red ruby, oval cut."
+    "description": "Natural pigeon blood red ruby, oval cut.",
+    "mainImage": "https://cdn-media.glamira.com/media/product/newgeneration/view/1/sku/hrundl-pr/diamond/ruby_AAA/stone2/diamond-zirconia_AAAAA/stone3/diamond-zirconia_AAAAA/alloycolour/white.jpg",
+    "images": [
+      "https://cdn-media.glamira.com/media/product/newgeneration/view/2/sku/hrundl-pr/diamond/ruby_AAA/stone2/diamond-zirconia_AAAAA/stone3/diamond-zirconia_AAAAA/alloycolour/white.jpg",
+      "https://cdn-media.glamira.com/media/product/newgeneration/view/3/sku/hrundl-pr/diamond/ruby_AAA/stone2/diamond-zirconia_AAAAA/stone3/diamond-zirconia_AAAAA/alloycolour/white.jpg",
+      "https://cdn-media.glamira.com/media/product/newgeneration/view/4/sku/hrundl-pr/diamond/ruby_AAA/stone2/diamond-zirconia_AAAAA/stone3/diamond-zirconia_AAAAA/alloycolour/white.jpg"
+    ]
   },
+
   {
     "id": "GEM004",
     "type": "Diamond",
@@ -33,7 +53,14 @@
     "brand": "Tiffany",
     "size": 0.9,
     "price": 2100.0,
-    "description": "Brilliant round diamond with G color and VS2 clarity."
+    "description": "Brilliant round diamond with G color and VS2 clarity.",
+    "mainImage": "https://www.tierra.vn/wp-content/uploads/2024/07/NCH9916_4.webp",
+    "images": [
+      "https://www.tierra.vn/wp-content/uploads/2024/07/NCH9916_1.webp",
+      "https://www.tierra.vn/wp-content/uploads/2024/07/NCH9916_3.webp",
+      "https://www.tierra.vn/wp-content/uploads/2024/07/NCH9916_5.webp"
+    ]
+
   },
   {
     "id": "GEM005",
@@ -42,7 +69,13 @@
     "brand": "Swarovski",
     "size": 3.2,
     "price": 4890.75,
-    "description": "Royal blue sapphire, emerald cut, flawless clarity."
+    "description": "Royal blue sapphire, emerald cut, flawless clarity.",
+    "mainImage": "https://cdn-media.glamira.com/media/product/newgeneration/view/1/sku/talmeri-a/diamond/sapphire_AAA/stone2/lab-grown-diamond_AAA/alloycolour/white.jpg",
+    "images": [
+      "https://cdn-media.glamira.com/media/product/newgeneration/view/2/sku/talmeri-a/diamond/sapphire_AAA/stone2/lab-grown-diamond_AAA/alloycolour/white.jpg",
+      "https://cdn-media.glamira.com/media/product/newgeneration/view/3/sku/talmeri-a/diamond/sapphire_AAA/stone2/lab-grown-diamond_AAA/alloycolour/white.jpg",
+      "https://cdn-media.glamira.com/media/product/newgeneration/view/4/sku/talmeri-a/diamond/sapphire_AAA/stone2/lab-grown-diamond_AAA/alloycolour/white.jpg"
+    ]
   },
   {
     "id": "GEM006",
@@ -51,7 +84,14 @@
     "brand": "Pandora",
     "size": 2.5,
     "price": 5600.0,
-    "description": "Rare Burmese ruby, intense red tone, cushion cut."
+    "description": "Rare Burmese ruby, intense red tone, cushion cut.",
+    "mainImage": "https://example.com/main-image.jpg",
+    "images": [
+      "https://example.com/image1.jpg",
+      "https://example.com/image2.jpg",
+      "https://example.com/image3.jpg"
+    ]
+
   },
   {
     "id": "GEM007",
@@ -60,7 +100,14 @@
     "brand": "Tiffany",
     "size": 1.1,
     "price": 3950.0,
-    "description": "GIA certified diamond, princess cut, near colorless."
+    "description": "GIA certified diamond, princess cut, near colorless.",
+    "mainImage": "https://example.com/main-image.jpg",
+    "images": [
+      "https://example.com/image1.jpg",
+      "https://example.com/image2.jpg",
+      "https://example.com/image3.jpg"
+    ]
+
   },
   {
     "id": "GEM008",
@@ -69,7 +116,14 @@
     "brand": "Swarovski",
     "size": 1.7,
     "price": 2400.0,
-    "description": "Teal sapphire with unique sparkle, oval cut."
+    "description": "Teal sapphire with unique sparkle, oval cut.",
+    "mainImage": "https://example.com/main-image.jpg",
+    "images": [
+      "https://example.com/image1.jpg",
+      "https://example.com/image2.jpg",
+      "https://example.com/image3.jpg"
+    ]
+
   },
   {
     "id": "GEM009",
@@ -78,7 +132,14 @@
     "brand": "Pandora",
     "size": 1.3,
     "price": 1800.0,
-    "description": "Natural ruby from Mozambique, radiant cut."
+    "description": "Natural ruby from Mozambique, radiant cut.",
+    "mainImage": "https://example.com/main-image.jpg",
+    "images": [
+      "https://example.com/image1.jpg",
+      "https://example.com/image2.jpg",
+      "https://example.com/image3.jpg"
+    ]
+
   },
   {
     "id": "GEM010",
@@ -87,7 +148,14 @@
     "brand": "Tiffany",
     "size": 2.05,
     "price": 8800.0,
-    "description": "Flawless lab-grown diamond, D color, round cut."
+    "description": "Flawless lab-grown diamond, D color, round cut.",
+    "mainImage": "https://example.com/main-image.jpg",
+    "images": [
+      "https://example.com/image1.jpg",
+      "https://example.com/image2.jpg",
+      "https://example.com/image3.jpg"
+    ]
+
   },
   {
     "id": "GEM011",
@@ -96,7 +164,14 @@
     "brand": "Swarovski",
     "size": 2.4,
     "price": 1450.0,
-    "description": "High-quality clear quartz with brilliant luster."
+    "description": "High-quality clear quartz with brilliant luster.",
+    "mainImage": "https://example.com/main-image.jpg",
+    "images": [
+      "https://example.com/image1.jpg",
+      "https://example.com/image2.jpg",
+      "https://example.com/image3.jpg"
+    ]
+
   },
   {
     "id": "GEM012",
@@ -105,7 +180,14 @@
     "brand": "Tiffany",
     "size": 1.9,
     "price": 6700.0,
-    "description": "Colombian emerald with vibrant green color."
+    "description": "Colombian emerald with vibrant green color.",
+    "mainImage": "https://example.com/main-image.jpg",
+    "images": [
+      "https://example.com/image1.jpg",
+      "https://example.com/image2.jpg",
+      "https://example.com/image3.jpg"
+    ]
+
   },
   {
     "id": "GEM013",
@@ -114,7 +196,14 @@
     "brand": "Pandora",
     "size": 2.1,
     "price": 2100.0,
-    "description": "Golden topaz with radiant sparkle and clean facets."
+    "description": "Golden topaz with radiant sparkle and clean facets.",
+    "mainImage": "https://example.com/main-image.jpg",
+    "images": [
+      "https://example.com/image1.jpg",
+      "https://example.com/image2.jpg",
+      "https://example.com/image3.jpg"
+    ]
+
   },
   {
     "id": "GEM014",
@@ -123,7 +212,14 @@
     "brand": "Swarovski",
     "size": 1.6,
     "price": 1300.0,
-    "description": "Rich purple amethyst, oval cut, ethically sourced."
+    "description": "Rich purple amethyst, oval cut, ethically sourced.",
+    "mainImage": "https://example.com/main-image.jpg",
+    "images": [
+      "https://example.com/image1.jpg",
+      "https://example.com/image2.jpg",
+      "https://example.com/image3.jpg"
+    ]
+
   },
   {
     "id": "GEM015",
@@ -132,7 +228,14 @@
     "brand": "Tiffany",
     "size": 1.4,
     "price": 1950.0,
-    "description": "Australian opal with stunning rainbow reflections."
+    "description": "Australian opal with stunning rainbow reflections.",
+    "mainImage": "https://example.com/main-image.jpg",
+    "images": [
+      "https://example.com/image1.jpg",
+      "https://example.com/image2.jpg",
+      "https://example.com/image3.jpg"
+    ]
+
   },
   {
     "id": "GEM016",
@@ -141,7 +244,14 @@
     "brand": "Pandora",
     "size": 2.2,
     "price": 7350.0,
-    "description": "Deep green emerald with excellent clarity and cut."
+    "description": "Deep green emerald with excellent clarity and cut.",
+    "mainImage": "https://example.com/main-image.jpg",
+    "images": [
+      "https://example.com/image1.jpg",
+      "https://example.com/image2.jpg",
+      "https://example.com/image3.jpg"
+    ]
+
   },
   {
     "id": "GEM017",
@@ -150,7 +260,14 @@
     "brand": "Swarovski",
     "size": 2.8,
     "price": 1680.0,
-    "description": "Smoky quartz with rich earthy tones and polish."
+    "description": "Smoky quartz with rich earthy tones and polish.",
+    "mainImage": "https://example.com/main-image.jpg",
+    "images": [
+      "https://example.com/image1.jpg",
+      "https://example.com/image2.jpg",
+      "https://example.com/image3.jpg"
+    ]
+
   },
   {
     "id": "GEM018",
@@ -159,7 +276,14 @@
     "brand": "Tiffany",
     "size": 1.6,
     "price": 4200.0,
-    "description": "Classic ruby gemstone, ideal for elegant settings."
+    "description": "Classic ruby gemstone, ideal for elegant settings.",
+    "mainImage": "https://example.com/main-image.jpg",
+    "images": [
+      "https://example.com/image1.jpg",
+      "https://example.com/image2.jpg",
+      "https://example.com/image3.jpg"
+    ]
+
   },
   {
     "id": "GEM019",
@@ -168,7 +292,14 @@
     "brand": "Pandora",
     "size": 1.9,
     "price": 1475.0,
-    "description": "Delicate lavender amethyst, perfect for fine jewelry."
+    "description": "Delicate lavender amethyst, perfect for fine jewelry.",
+    "mainImage": "https://example.com/main-image.jpg",
+    "images": [
+      "https://example.com/image1.jpg",
+      "https://example.com/image2.jpg",
+      "https://example.com/image3.jpg"
+    ]
+
   },
   {
     "id": "GEM020",
@@ -177,6 +308,13 @@
     "brand": "Tiffany",
     "size": 2.6,
     "price": 2320.0,
-    "description": "Champagne topaz with a soft golden glow."
+    "description": "Champagne topaz with a soft golden glow.",
+    "mainImage": "https://example.com/main-image.jpg",
+    "images": [
+      "https://example.com/image1.jpg",
+      "https://example.com/image2.jpg",
+      "https://example.com/image3.jpg"
+    ]
+
   }
 ]

@@ -30,7 +30,7 @@ function Navbar() {
         </button>
 
         <div className="collapse navbar-collapse  justify-content-end" id="navbarLinks">
-          <ul className="navbar-nav d-flex justify-content-lg-center w-100 text-lg-center text-end" style={{fontWeight: "600"}}>
+          <ul className="navbar-nav d-flex justify-content-lg-center w-100 text-lg-center text-end" style={{fontWeight: "600", gap: "12px"}}>
             <li className="nav-item">
               <Link className="nav-link text-dark" to="/about">About Us</Link>
             </li>
