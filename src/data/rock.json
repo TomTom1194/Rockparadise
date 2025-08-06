@@ -1,6 +1,7 @@
 [
   {
     "id": "GEM001",
+    "name": "Tiffany White Diamond VVS1",
     "type": "Diamond",
     "color": "White",
     "brand": "Tiffany",
@@ -13,9 +14,10 @@
       "https://www.tierra.vn/wp-content/uploads/2024/07/nch1316-2-v-gJ2PxagKSa.webp",
       "https://www.tierra.vn/wp-content/uploads/2024/07/nch1316-4-v-YgV0crTfI5.webp"
     ]
-},
+  },
   {
     "id": "GEM002",
+    "name": "Swarovski Blue Sapphire Sri Lanka",
     "type": "Sapphire",
     "color": "Blue",
     "brand": "Swarovski",
@@ -29,9 +31,9 @@
       "https://cdn-media.glamira.com/media/product/newgeneration/view/4/sku/domela11/diamond/sapphire_AA/stone2/diamond-sapphire_AAA/alloycolour/yellow.jpg"
     ]
   },
-
   {
     "id": "GEM003",
+    "name": "Pandora Red Ruby Oval",
     "type": "Ruby",
     "color": "Red",
     "brand": "Pandora",
@@ -45,9 +47,9 @@
       "https://cdn-media.glamira.com/media/product/newgeneration/view/4/sku/hrundl-pr/diamond/ruby_AAA/stone2/diamond-zirconia_AAAAA/stone3/diamond-zirconia_AAAAA/alloycolour/white.jpg"
     ]
   },
-
   {
     "id": "GEM004",
+    "name": "Tiffany G Color Diamond Round",
     "type": "Diamond",
     "color": "G",
     "brand": "Tiffany",
@@ -60,10 +62,10 @@
       "https://www.tierra.vn/wp-content/uploads/2024/07/NCH9916_3.webp",
       "https://www.tierra.vn/wp-content/uploads/2024/07/NCH9916_5.webp"
     ]
-
   },
   {
     "id": "GEM005",
+    "name": "Swarovski Royal Blue Sapphire Emerald Cut",
     "type": "Sapphire",
     "color": "Royal Blue",
     "brand": "Swarovski",
@@ -79,6 +81,7 @@
   },
   {
     "id": "GEM006",
+    "name": "Pandora Deep Red Burmese Ruby",
     "type": "Ruby",
     "color": "Deep Red",
     "brand": "Pandora",
@@ -91,10 +94,10 @@
       "https://cdn-media.glamira.com/media/product/newgeneration/view/3/sku/A30743-1Z/diamond/ruby_AAA/alloycolour/white.jpg",
       "https://cdn-media.glamira.com/media/product/newgeneration/view/4/sku/A30743-1Z/diamond/ruby_AAA/alloycolour/white.jpg"
     ]
-
   },
   {
     "id": "GEM007",
+    "name": "Tiffany Princess Cut Diamond",
     "type": "Diamond",
     "color": "Near Colorless",
     "brand": "Tiffany",
@@ -107,10 +110,10 @@
       "https://www.tierra.vn/wp-content/uploads/2024/07/NKC9901_3.webp",
       "https://www.tierra.vn/wp-content/uploads/2024/07/NKC9901_5.webp"
     ]
-
   },
   {
     "id": "GEM008",
+    "name": "Swarovski Teal Sapphire Oval Cut",
     "type": "Sapphire",
     "color": "Teal",
     "brand": "Swarovski",
@@ -123,10 +126,10 @@
       "https://cdn-media.glamira.com/media/product/newgeneration/view/3/sku/sueann2/diamond/sapphire_AA/stone2/diamond-Brillant_AAA/alloycolour/white.jpg",
       "https://cdn-media.glamira.com/media/product/newgeneration/view/4/sku/sueann2/diamond/sapphire_AA/stone2/diamond-Brillant_AAA/alloycolour/white.jpg"
     ]
-
   },
   {
     "id": "GEM009",
+    "name": "Pandora Raspberry Red Ruby Radiant Cut",
     "type": "Ruby",
     "color": "Raspberry Red",
     "brand": "Pandora",
@@ -138,10 +141,10 @@
       "https://cdn-media.glamira.com/media/product/newgeneration/view/2/sku/G100735/diamond/ruby_AA/alloycolour/white.jpg",
       "https://cdn-media.glamira.com/media/product/newgeneration/view/3/sku/G100735/diamond/ruby_AA/alloycolour/white.jpg"
     ]
-
   },
   {
     "id": "GEM010",
+    "name": "Tiffany D Color Diamond Flawless",
     "type": "Diamond",
     "color": "D",
     "brand": "Tiffany",
@@ -154,10 +157,10 @@
       "https://www.tierra.vn/wp-content/uploads/2024/07/NCH3103_3.webp",
       "https://www.tierra.vn/wp-content/uploads/2024/07/NCH3103_5.webp"
     ]
-
   },
-  {
+   {
     "id": "GEM011",
+    "name": "Swarovski Clear Quartz Brilliant",
     "type": "Quartz",
     "color": "Clear",
     "brand": "Swarovski",
@@ -170,10 +173,10 @@
       "https://cdn-media.glamira.com/media/product/newgeneration/view/3/sku/8981does/diamond/black-sapphire_AAA/alloycolour/yellow.jpg",
       "https://cdn-media.glamira.com/media/product/newgeneration/view/4/sku/8981does/diamond/black-sapphire_AAA/alloycolour/yellow.jpg"
     ]
-
   },
   {
     "id": "GEM012",
+    "name": "Tiffany Colombian Emerald Green",
     "type": "Emerald",
     "color": "Green",
     "brand": "Tiffany",
@@ -186,10 +189,10 @@
       "https://cdn-media.glamira.com/media/product/newgeneration/view/3/sku/talmeri-a/diamond/emerald_AAA/stone2/lab-grown-diamond_AAA/alloycolour/white.jpg",
       "https://cdn-media.glamira.com/media/product/newgeneration/view/4/sku/talmeri-a/diamond/emerald_AAA/stone2/lab-grown-diamond_AAA/alloycolour/white.jpg"
     ]
-
   },
   {
     "id": "GEM013",
+    "name": "Pandora Golden Topaz Radiant",
     "type": "Topaz",
     "color": "Golden",
     "brand": "Pandora",
@@ -202,10 +205,10 @@
       "https://cdn-media.glamira.com/media/product/newgeneration/view/3/sku/tanazia/diamond/yellow-sapphire_AAA/alloycolour/red.jpg",
       "https://cdn-media.glamira.com/media/product/newgeneration/view/4/sku/tanazia/diamond/yellow-sapphire_AAA/alloycolour/red.jpg"
     ]
-
   },
   {
     "id": "GEM014",
+    "name": "Swarovski Purple Amethyst Oval",
     "type": "Amethyst",
     "color": "Purple",
     "brand": "Swarovski",
@@ -218,10 +221,10 @@
       "https://cdn-media.glamira.com/media/product/newgeneration/view/3/sku/brasfield-r/diamond/ruby_AAA/alloycolour/yellow.jpg",
       "https://cdn-media.glamira.com/media/product/newgeneration/view/4/sku/brasfield-r/diamond/ruby_AAA/alloycolour/yellow.jpg"
     ]
-
   },
   {
     "id": "GEM015",
+    "name": "Tiffany Iridescent Opal Rainbow",
     "type": "Opal",
     "color": "Iridescent",
     "brand": "Tiffany",
@@ -234,10 +237,10 @@
       "https://cdn-media.glamira.com/media/product/newgeneration/view/3/sku/14181grede-b/diamond/diamond-sapphire_AAA/alloycolour/yellow.jpg",
       "https://cdn-media.glamira.com/media/product/newgeneration/view/4/sku/14181grede-b/diamond/diamond-sapphire_AAA/alloycolour/yellow.jpg"
     ]
-
   },
   {
     "id": "GEM016",
+    "name": "Pandora Deep Green Emerald Cut",
     "type": "Emerald",
     "color": "Deep Green",
     "brand": "Pandora",
@@ -250,10 +253,10 @@
       "https://cdn-media.glamira.com/media/product/newgeneration/view/4/sku/KENAN11-1-RB/diamond/emerald_AAA/alloycolour/white.jpg",
       "https://cdn-media.glamira.com/media/product/newgeneration/view/3/sku/KENAN11-1-RB/diamond/emerald_AAA/alloycolour/white.jpg"
     ]
-
   },
   {
     "id": "GEM017",
+    "name": "Swarovski Smoky Quartz Polished",
     "type": "Quartz",
     "color": "Smoky",
     "brand": "Swarovski",
@@ -266,10 +269,10 @@
       "https://cdn-media.glamira.com/media/product/newgeneration/view/3/sku/twang-r/diamond/diamond-sapphire_AAA/stone2/diamond-sapphire_AAA/alloycolour/white.jpg",
       "https://cdn-media.glamira.com/media/product/newgeneration/view/4/sku/twang-r/diamond/diamond-sapphire_AAA/stone2/diamond-sapphire_AAA/alloycolour/white.jpg"
     ]
-
   },
   {
     "id": "GEM018",
+    "name": "Tiffany Classic Ruby Red",
     "type": "Ruby",
     "color": "Red",
     "brand": "Tiffany",
@@ -282,10 +285,10 @@
       "https://cdn-media.glamira.com/media/product/newgeneration/view/3/sku/travis/diamond/ruby_AAA/alloycolour/yellow.jpg",
       "https://cdn-media.glamira.com/media/product/newgeneration/view/4/sku/travis/diamond/ruby_AAA/alloycolour/yellow.jpg"
     ]
-
   },
   {
     "id": "GEM019",
+    "name": "Pandora Lavender Amethyst Delicate",
     "type": "Amethyst",
     "color": "Lavender",
     "brand": "Pandora",
@@ -298,10 +301,10 @@
       "https://cdn-media.glamira.com/media/product/newgeneration/view/3/sku/harriet-1n/diamond/sapphire_AAA/alloycolour/white.jpg",
       "https://cdn-media.glamira.com/media/product/newgeneration/view/4/sku/harriet-1n/diamond/sapphire_AAA/alloycolour/white.jpg"
     ]
-
   },
   {
     "id": "GEM020",
+    "name": "Tiffany Champagne Topaz Glow",
     "type": "Topaz",
     "color": "Champagne",
     "brand": "Tiffany",
@@ -314,6 +317,5 @@
       "https://cdn-media.glamira.com/media/product/newgeneration/view/3/sku/azaria/diamond/morganite_AAA/stone2/labdiamond_AAAA/stone3/labdiamond_AAAA/alloycolour/yellow.jpg",
       "https://cdn-media.glamira.com/media/product/newgeneration/view/4/sku/azaria/diamond/morganite_AAA/stone2/labdiamond_AAAA/stone3/labdiamond_AAAA/alloycolour/yellow.jpg"
     ]
-
   }
 ]

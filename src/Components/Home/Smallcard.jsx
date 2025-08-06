@@ -13,7 +13,7 @@ function SmallCard({ product }) {
         />
         <div className="card-body text-center">
           <h5 className="card-title" style={{ fontSize: "1.1rem" }}>
-            {product.type} - {product.brand}
+            {product.name}
           </h5>
           <p className="card-text text-muted mb-2" style={{ fontSize: "0.95rem" }}>
             ${product.price.toLocaleString()} USD

@@ -8,6 +8,7 @@ import Category from "./Components/Category";
 import logo from "./images/logo.png"; 
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
+import ProductDetail from "./pages/Productdetail";
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
           <Route path="/faq" element={<Faq />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/category" element={<Category />} />
+          <Route path="/product/:id" element={<ProductDetail/>} />
+
         </Routes>
       </main>
 
