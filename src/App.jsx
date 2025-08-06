@@ -24,7 +24,6 @@ function App() {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/category" element={<Category />} />
           <Route path="/product/:id" element={<ProductDetail/>} />
-
         </Routes>
       </main>
 
