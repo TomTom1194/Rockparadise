@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 function SmallCard({ product }) {
   return (
     <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-      <div className="card h-100 shadow-sm">
+      <div className="card h-100 " >
         <img
           src={product.mainImage}
           alt={`${product.type} ${product.brand}`}
           className="card-img-top"
-          style={{ height: "200px", objectFit: "cover" }}
+          style={{ height: "200px", objectFit: "contain" }}
         />
         <div className="card-body text-center">
           <h5 className="card-title" style={{ fontSize: "1.1rem" }}>

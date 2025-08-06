@@ -7,8 +7,8 @@ function SellSection({ title, ids }) {
   const selectedProducts = rockData.filter((item) => ids.includes(item.id));
 
   return (
-    <section className="container my-5">
-      <h3 className="mb-4 text-center">{title}</h3>
+    <section className="container my-5 text-center">
+      <h3 className="mb-4 border border-dark rounded-pill py-2 px-4 d-inline-block">{title}</h3>
       <div className="row">
         {selectedProducts.map((item) => (
           <SmallCard key={item.id} product={item} />
