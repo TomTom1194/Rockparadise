@@ -3,12 +3,15 @@ import { useParams,useNavigate } from "react-router-dom";
 import rockData from "../data/rock.json"; 
 import SellSection from "../Components/Home/SellSection";
 import commentsData from "../data/comment.json";
+import { useCart } from "../context/CartContext";
+
 
 function Productdetail() {
   const { id } = useParams();
   const [product, setProduct] = useState(null);
   const [mainImage, setMainImage] = useState("");
   const navigate = useNavigate();
+  const { addToCart } = useCart();
 
   useEffect(() => {
     const foundProduct = rockData.find((item) => item.id === id);
@@ -19,6 +22,10 @@ function Productdetail() {
   }, [id]);
 
   if (!product) return <div className="text-center my-5">Loading...</div>;
+
+    const handleAddToCart = () => {
+    addToCart(product); // ⬅️ Gọi hàm addToCart từ context
+  };
 
   const relatedProducts = rockData
   .filter(
@@ -92,12 +99,17 @@ function Productdetail() {
             <strong className="me-2" style={{ width: "100px" }}>Price:</strong>
             <span>${product.price.toLocaleString()}</span>
           </div>
+
         </div>
 
         <div className="border rounded p-3 bg-light">
           <h5 className="mb-2">Description</h5>
           <p className="mb-0">{product.description}</p>
         </div>
+          <div className="d-flex flex-row mt-5 gap-3">
+            {/* <button className="btn btn-buy w-100" style={{height: "50px"}}>Buy</button> */}
+            <button className="btn btn-addtocart w-100 3" style={{height: "50px"}} onClick={handleAddToCart}>Add to Cart</button>
+          </div>
       </div>
 
       </div>

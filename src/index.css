@@ -91,3 +91,27 @@ html {
   color: white !important;
   background-color: black;
 }
+
+@media (min-width: 992px) {
+  .navbar {
+    padding-left: 7rem !important;
+    padding-right: 5rem !important;
+  }
+}
+
+.btn-addtocart {
+  background-color: #6b4c3b; /* Nâu sậm */
+  color: white;
+  border: 1px solid #6b4c3b;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-addtocart:hover {
+  background-color: black;
+  color: white;
+}
+
+main {
+  padding-top: 100px;
+}
+

@@ -1,24 +1,30 @@
 // src/Components/Navbar.jsx
 
-import React from 'react';
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../images/logo.png"; 
+import CartDropdown from './CartDropdown';
+import { FaShoppingCart } from "react-icons/fa";
+import { useCart } from "../context/CartContext";
 
 function Navbar() {
+  const [showDropdown, setShowDropdown] = useState(false);
+  const { cartItems } = useCart();
+  console.log(showDropdown)
   return (
-    <nav className="navbar navbar-expand-lg bg-white px-3 shadow-sm">
+    <nav className="navbar navbar-expand-lg bg-white px-3 shadow-sm ps-lg-5 fixed-top">
       <div className="container-fluid">
-        <Link className="navbar-brand" to="/">
+        <Link className="navbar-brand " to="/">
           <img
             src={logo}
             alt="Logo"
-            className="img-fluid"
+            className="img-fluid "
             style={{ maxWidth: "120px" }}
           />
         </Link>
 
         <button
-          className="navbar-toggler"
+          className="navbar-toggler order-2 order-lg-3"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarLinks"
@@ -29,7 +35,7 @@ function Navbar() {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div className="collapse navbar-collapse  justify-content-end" id="navbarLinks">
+        <div className="collapse navbar-collapse  justify-content-end order-3" id="navbarLinks">
           <ul className="navbar-nav d-flex justify-content-lg-center w-100 text-lg-center text-end" style={{fontWeight: "600", gap: "12px"}}>
             <li className="nav-item">
               <Link className="nav-link text-dark" to="/about">About Us</Link>
@@ -47,7 +53,27 @@ function Navbar() {
               <Link className="nav-link text-dark" to="/category">Category</Link>
             </li>
           </ul>
+
         </div>
+
+        <div className="ms-auto position-relative order-1 order-lg-3 ">
+          <button
+            className="btn btn-link text-dark position-relative"
+            onClick={() => setShowDropdown(!showDropdown)}
+          >
+            <FaShoppingCart size={24} />
+            <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              {cartItems.length}
+            </span>
+          </button>
+
+        {showDropdown && (
+          <div className="dropdown-menu show position-absolute end-0 mt-2 z-3" style={{ minWidth: "300px" }}>
+            <CartDropdown />
+          </div>
+        )}
+      </div>
+        
       </div>
     </nav>
   );

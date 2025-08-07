@@ -9,10 +9,14 @@ import logo from "./images/logo.png";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import ProductDetail from "./pages/Productdetail";
+import Cart from "./pages/Cart";
+import { CartProvider } from "./context/CartContext";
+import PaymentDetail from "./pages/PaymentDetail";
+import PaymentCongrat from "./pages/PaymentCongrat";
 
 function App() {
   return (
-      <>
+      <CartProvider>
       <Navbar />
 
       <main >
@@ -24,11 +28,15 @@ function App() {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/category" element={<Category />} />
           <Route path="/product/:id" element={<ProductDetail/>} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/payment" element={<PaymentDetail/>} />
+          <Route path="/payment-success" element={<PaymentCongrat />} />
+
         </Routes>
       </main>
 
       <Footer />
-    </>
+    </CartProvider>
 
   );
 }
