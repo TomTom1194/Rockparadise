@@ -78,3 +78,16 @@ html {
 .nav-link:hover::after {
   width: 100%;
 }
+
+.custom-card-hover {
+  transition: all 0.3s ease;
+}
+
+.custom-card-hover:hover {
+  box-shadow: 2px 2px 0 4px black;
+}
+
+.custom-card-hover:hover .btn-detail {
+  color: white !important;
+  background-color: black;
+}
