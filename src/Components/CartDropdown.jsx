@@ -16,7 +16,7 @@ function CartDropdown({ closeDropdown }) {
     <div className=" p-3 shadow" style={{ minWidth: "300px" }}>
       {/* <h6 className="dropdown-header">Cart</h6> */}
       {cartItems.length === 0 ? (
-        <p className="text-muted">Your cart is empty.</p>
+        <p className="text-muted text-center">Your cart is empty.</p>
       ) : (
         <>
           <ul className="list-unstyled mb-2" style={{ maxHeight: "200px", overflowY: "auto" }}>

@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { useCart } from "../context/CartContext";
 import { useNavigate } from "react-router-dom";
+import ConfirmationModal from '../Components/ConfirmationModal'; 
 
 function PaymentDetail() {
   const { cartItems, totalPrice, clearCart } = useCart();
-
   const navigate = useNavigate();
 
   const [formData, setFormData] = useState({
@@ -15,6 +15,8 @@ function PaymentDetail() {
     phone: "",
   });
 
+  const [showModal, setShowModal] = useState(false);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
@@ -23,9 +25,19 @@ function PaymentDetail() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Payment Info:", formData);
-    alert("Payment Confirmed!");
+    setShowModal(true);
+  };
+
+  
+  const handleConfirmPayment = () => {
     clearCart();
     navigate("/payment-success");
+    setShowModal(false); 
+  };
+
+  
+  const handleCancelPayment = () => {
+    setShowModal(false); 
   };
 
   return (
@@ -135,6 +147,15 @@ function PaymentDetail() {
           </div>
         </div>
       </form>
+      
+      {/* Component Modal confirm */}
+      <ConfirmationModal
+        show={showModal}
+        handleClose={handleCancelPayment}
+        handleConfirm={handleConfirmPayment}
+        title="Payment Confirmation"
+        message="Are you sure you want to proceed with the payment?"
+      />
     </div>
   );
 }

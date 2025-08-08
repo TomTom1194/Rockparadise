@@ -1,5 +1,6 @@
+// src/pages/Productdetail.jsx
 import React, { useState, useEffect } from "react";
-import { useParams,useNavigate } from "react-router-dom";
+import { useParams,useNavigate, Link } from "react-router-dom";
 import rockData from "../data/rock.json"; 
 import SellSection from "../Components/Home/SellSection";
 import commentsData from "../data/comment.json";
@@ -23,19 +24,20 @@ function Productdetail() {
 
   if (!product) return <div className="text-center my-5">Loading...</div>;
 
-    const handleAddToCart = () => {
+  const handleAddToCart = () => {
     addToCart(product); 
   };
 
- const relatedProducts = rockData.filter(
-  p => 
-    p.productType === product.productType && 
-    (p.type === product.type || p.brand === product.brand) &&
-    p.id !== product.id
-)
-  .slice(0, 4);
+  const relatedProducts = rockData.filter(
+    p => 
+      p.productType === product.productType && 
+      (p.type === product.type || p.brand === product.brand) &&
+      p.id !== product.id
+  )
+    .slice(0, 4);
 
-
+  const fixedIdsForViewMore = [product.id, ...relatedProducts.map(p => p.id)];
+  
   return (
     <div className="container my-5">
       <button onClick={() => navigate(-1)} className="btn btn-outline-secondary mb-4">
@@ -119,8 +121,23 @@ function Productdetail() {
 
       </div>
             {/* Reccomment*/}
-            <SellSection title="You May Also Like" products={relatedProducts} />
-
+            <SellSection 
+              title="You May Also Like" 
+              products={relatedProducts} 
+              showViewMoreButton={false}
+            />
+            <div className="text-center" style={{marginTop:"-50px"}}>
+              <Link
+                to={`/viewmore/recommendation`} 
+                state={{ 
+                  title: "You May Also Like",
+                  ids: fixedIdsForViewMore
+                }}
+                className="btn btn-outline-dark  "
+                >
+                View More
+              </Link>
+            </div>
         
         {/* Comment Section */}
         <div className="mt-5" style={{margin: "auto", width: "75%"}}>
