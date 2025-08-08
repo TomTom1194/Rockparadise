@@ -1,12 +1,23 @@
-import React from 'react';
-import { Link, useParams } from 'react-router-dom';
+import React from "react";
+import { Link, useParams } from "react-router-dom";
 
-const categories = ["Diamond", "Quartz", "Ruby", "Sapphire", "Emerald",  "Topaz", "Amethyst", "Opal", "Tiffany", "Swarovski", "Pandora"];
+const categories = [
+  "Diamond",
+  "Quartz",
+  "Ruby",
+  "Sapphire",
+  "Emerald",
+  "Topaz",
+  "Amethyst",
+  "Opal",
+  "Tiffany",
+  "Swarovski",
+  "Pandora"
+];
 
-function Category({ layout = "horizontal" }) {
+function Category({ layout = "horizontal", onCategoryClick }) {
   const { category } = useParams();
 
-  // Class layout cho horizontal và vertical
   const containerClass =
     layout === "horizontal"
       ? "d-flex flex-row flex-wrap justify-content-center gap-2"
@@ -24,6 +35,9 @@ function Category({ layout = "horizontal" }) {
               isActive ? "btn-dark text-white" : "btn-outline-dark"
             }`}
             style={{ textTransform: "capitalize" }}
+            onClick={() => {
+              if (onCategoryClick) onCategoryClick(); //close filter onclick
+            }}
           >
             {cat}
           </Link>

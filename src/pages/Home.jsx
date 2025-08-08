@@ -7,7 +7,10 @@ function Home() {
         <>
             
             <Hero></Hero>
+            <div className="d-flex flex-column align-items-center ">
+                <h2 className="text-center mt-5 mb-3 ">Categories</h2>
             <Category layout="horizontal"></Category>
+            </div>
 
               {/* Best Seller section:  */}
             <SellSection 

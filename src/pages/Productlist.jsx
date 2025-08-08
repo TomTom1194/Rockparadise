@@ -25,11 +25,11 @@ function Productlist() {
   return (
     <div className="container py-5">
       <div
-        className="d-flex justify-content-between align-items-center mb-4"
+        className="d-flex justify-content-between align-items-center mb-4 "
         style={{ position: "sticky", top: navbarHeight, zIndex: 10, background: "#fff" }}
       >
         <button
-          className="btn btn-outline-secondary"
+          className="btn btn-outline-secondary "
           onClick={() => navigate(-1)}
         >
           ← Back
@@ -46,19 +46,20 @@ function Productlist() {
       </div>
 
       {/* Mobile-only sidebar */}
-      {showCategory && (
-        <div className="d-md-none mb-4"
-        style={{
-            position: "sticky",
-            top: navbarHeight + 40,
-            zIndex: 1000,
-            background: "#fff",
-            padding: "10px 0"
-            }}>
-          <Category />
-        </div>
-      )}
-
+        {showCategory && (
+          <div
+            className="d-md-none mb-4"
+            style={{
+              position: "sticky",
+              top: navbarHeight + 40,
+              zIndex: 1000,
+              background: "#fff",
+              padding: "10px 0"
+            }}
+          >
+            <Category layout="v" onCategoryClick={() => setShowCategory(false)} />
+          </div>
+        )}
       <div className="row">
         {/* Desktop sidebar */}
         <div
@@ -70,7 +71,7 @@ function Productlist() {
             zIndex: 1
           }}
         >
-          <Category />
+          <Category layout="v"/>
         </div>
 
         {/* Product list */}

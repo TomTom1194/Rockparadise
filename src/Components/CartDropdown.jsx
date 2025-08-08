@@ -1,10 +1,11 @@
 import React from "react";
 import { useCart } from "../context/CartContext";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FaTrashAlt } from "react-icons/fa";
 
-function CartDropdown() {
+function CartDropdown({ closeDropdown }) {
   const { cartItems, updateQuantity,removeFromCart } = useCart();
+  const navigate = useNavigate();
 
   const totalPrice = cartItems.reduce(
     (sum, item) => sum + item.price * item.quantity,
@@ -49,9 +50,15 @@ function CartDropdown() {
             <strong>Total:</strong>
             <span>${totalPrice.toLocaleString()}</span>
           </div>
-          <Link to="/cart" className="btn btn-dark btn-sm mt-2 w-100">
+           <button
+            className="btn btn-dark btn-sm mt-2 w-100"
+            onClick={() => {
+              closeDropdown(); 
+              navigate("/cart"); 
+            }}
+          >
             Go to Cart
-          </Link>
+          </button>
         </>
       )}
     </div>
