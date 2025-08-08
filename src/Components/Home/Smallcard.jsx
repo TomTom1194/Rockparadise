@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../../../src/index.css"; // tạo file CSS này
+import "../../../src/index.css"; 
 
 function SmallCard({ product }) {
   return (

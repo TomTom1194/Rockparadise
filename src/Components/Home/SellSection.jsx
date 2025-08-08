@@ -1,4 +1,3 @@
-// SellSection.jsx
 import React from "react";
 import rockData from "../../data/rock.json";
 import SmallCard from "./Smallcard";

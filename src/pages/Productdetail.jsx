@@ -1,4 +1,3 @@
-// src/pages/Productdetail.jsx
 import React, { useState, useEffect } from "react";
 import { useParams,useNavigate, Link } from "react-router-dom";
 import rockData from "../data/rock.json"; 

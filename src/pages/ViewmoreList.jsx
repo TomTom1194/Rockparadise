@@ -1,13 +1,15 @@
-// src/pages/ViewmoreList.jsx
-import React from "react";
-import { useParams, useNavigate, useLocation } from "react-router-dom"; // Thêm useLocation
+import React, { useState } from "react";
+import { useParams, useNavigate, useLocation } from "react-router-dom";
 import rockData from "../data/rock.json";
 import SellSection from "../Components/Home/SellSection";
+import Category from "../Components/Category";
 
 function ViewmoreList() {
   const { title } = useParams();
   const navigate = useNavigate();
-  const location = useLocation(); // Lấy state từ location
+  const location = useLocation();
+
+  const [sortOrder, setSortOrder] = useState('default');
 
   const homeSectionMap = {
     "Best Seller": ["J001", "J003", "J005", "J007", "GEM001", "GEM003", "GEM005", "GEM007"],
@@ -15,31 +17,49 @@ function ViewmoreList() {
     "Latest": ["J009", "J010", "J011", "J012", "GEM009", "GEM010", "GEM011", "GEM012"],
   };
 
-  
   const fixedIds = location.state?.ids || homeSectionMap[title] || [];
   const displayTitle = location.state?.title || title;
 
   const fixedProducts = rockData.filter((p) => fixedIds.includes(p.id));
-
   const remainingProducts = rockData
     .filter((p) => !fixedIds.includes(p.id))
-    .sort(() => Math.random() - 0.5) 
-    .slice(0, 11); 
+    .sort(() => Math.random() - 0.5)
+    .slice(0, 11);
 
-  const finalProducts = [...fixedProducts, ...remainingProducts];
+  let finalProducts = [...fixedProducts, ...remainingProducts];
+
+  let sortedProducts = [...finalProducts];
+  if (sortOrder === 'low-to-high') {
+    sortedProducts.sort((a, b) => a.price - b.price);
+  } else if (sortOrder === 'high-to-low') {
+    sortedProducts.sort((a, b) => b.price - a.price);
+  }
 
   return (
     <div className="container py-5">
-      <button
-        className="btn btn-outline-secondary mb-4"
-        onClick={() => navigate(-1)}
-      >
-        ← Back
-      </button>
+      <div className="d-flex justify-content-between align-items-center mb-4">
+        <button
+          className="btn btn-outline-secondary"
+          onClick={() => navigate(-1)}
+        >
+          ← Back
+        </button>
+
+        {/* Dropdown  */}
+        <select
+          className="form-select w-auto"
+          value={sortOrder}
+          onChange={(e) => setSortOrder(e.target.value)}
+        >
+          <option value="default">Default Sort</option>
+          <option value="low-to-high">Price: Low to High</option>
+          <option value="high-to-low">Price: High to Low</option>
+        </select>
+      </div>
 
       <SellSection
         title={`${displayTitle}`}
-        products={finalProducts}
+        products={sortedProducts} 
         showViewMoreButton={false}
       />
     </div>
