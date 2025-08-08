@@ -1,25 +1,34 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
-const categories = ["Diamond", "Quartz", "Ruby", "Sapphire", "Emerald"];
+const categories = ["Diamond", "Quartz", "Ruby", "Sapphire", "Emerald",  "Topaz", "Amethyst", "Opal", "Tiffany", "Swarovski", "Pandora"];
 
-function Category() {
+function Category({ layout = "horizontal" }) {
+  const { category } = useParams();
+
+  // Class layout cho horizontal và vertical
+  const containerClass =
+    layout === "horizontal"
+      ? "d-flex flex-row flex-wrap justify-content-center gap-2"
+      : "d-flex flex-column gap-2";
+
   return (
-    <div className="container py-5">
-      <h2 className="text-center mb-4">Explore Gemstone Categories</h2>
-      <div className="row justify-content-center">
-        {categories.map((category, index) => (
-          <div key={index} className="col-6 col-md-4 col-lg-2 text-center mb-3">
-            <Link
-              to={`/productlist/${category.toLowerCase()}`}
-              className="btn btn-outline-dark w-100"
-              style={{ textTransform: "capitalize" }}
-            >
-              {category}
-            </Link>
-          </div>
-        ))}
-      </div>
+    <div className={containerClass}>
+      {categories.map((cat, index) => {
+        const isActive = category?.toLowerCase() === cat.toLowerCase();
+        return (
+          <Link
+            key={index}
+            to={`/productlist/${cat}`}
+            className={`btn ${
+              isActive ? "btn-dark text-white" : "btn-outline-dark"
+            }`}
+            style={{ textTransform: "capitalize" }}
+          >
+            {cat}
+          </Link>
+        );
+      })}
     </div>
   );
 }

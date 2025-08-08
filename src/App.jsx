@@ -13,6 +13,8 @@ import Cart from "./pages/Cart";
 import { CartProvider } from "./context/CartContext";
 import PaymentDetail from "./pages/PaymentDetail";
 import PaymentCongrat from "./pages/PaymentCongrat";
+import Productlist from "./pages/Productlist";
+import ViewmoreList from "./pages/ViewmoreList";
 
 function App() {
   return (
@@ -31,7 +33,8 @@ function App() {
           <Route path="/cart" element={<Cart />} />
           <Route path="/payment" element={<PaymentDetail/>} />
           <Route path="/payment-success" element={<PaymentCongrat />} />
-
+          <Route path="/productlist/:category" element={<Productlist />} />
+          <Route path="/viewmore/:title" element={<ViewmoreList />} />
         </Routes>
       </main>
 

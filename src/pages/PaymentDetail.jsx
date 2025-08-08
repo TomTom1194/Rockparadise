@@ -33,7 +33,7 @@ function PaymentDetail() {
       <h2 className="mb-4 text-center">Payment Details</h2>
       <form onSubmit={handleSubmit}>
         <div className="row g-4">
-          {/* Form bên trái */}
+          {/* Form  */}
           <div className="col-12 col-md-6 field-input">
             <div className="mb-3">
               <label className="form-label">First Name</label>
@@ -96,7 +96,7 @@ function PaymentDetail() {
             </div>
           </div>
 
-          {/* Order Summary bên phải */}
+          {/* Order Summary  */}
           <div className="col-12 col-md-6 order-summary">
             <h5 className="mb-3">Order Summary</h5>
             {cartItems.map((item) => (

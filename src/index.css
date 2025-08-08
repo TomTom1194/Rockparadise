@@ -115,3 +115,11 @@ main {
   padding-top: 100px;
 }
 
+.filter-btn.btn-outline-dark {
+  background-color: white !important;
+  color: black !important;
+}
+.filter-btn.btn-dark {
+  background-color: black !important;
+  color: white !important;
+}

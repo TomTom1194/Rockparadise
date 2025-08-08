@@ -24,16 +24,16 @@ function Productdetail() {
   if (!product) return <div className="text-center my-5">Loading...</div>;
 
     const handleAddToCart = () => {
-    addToCart(product); // ⬅️ Gọi hàm addToCart từ context
+    addToCart(product); 
   };
 
-  const relatedProducts = rockData
-  .filter(
-    (item) =>
-      (item.type === product.type || item.brand === product.brand) &&
-      item.id !== product.id
-  )
-  .slice(0, 8);
+ const relatedProducts = rockData.filter(
+  p => 
+    p.productType === product.productType && 
+    (p.type === product.type || p.brand === product.brand) &&
+    p.id !== product.id
+)
+  .slice(0, 4);
 
 
   return (
@@ -53,13 +53,18 @@ function Productdetail() {
             />
           </div>
           <div className="d-flex gap-3 flex-wrap justify-content-center">
-            {[product.mainImage, ...product.images].map((img, index) => (
+            {[product.mainImage, ...(product.images && product.images.length > 0 ? product.images : [])].map((img, index) => (
               <img
                 key={index}
                 src={img}
                 alt={`Thumbnail ${index}`}
                 className="img-thumbnail"
-                style={{ width: "100px", height: "100px", objectFit: "cover", cursor: "pointer" }}
+                style={{
+                  width: "100px",
+                  height: "100px",
+                  objectFit: "cover",
+                  cursor: "pointer"
+                }}
                 onClick={() => setMainImage(img)}
               />
             ))}

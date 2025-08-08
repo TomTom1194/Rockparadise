@@ -7,17 +7,23 @@ function Home() {
         <>
             
             <Hero></Hero>
-            
-            <Category></Category>
+            <Category layout="horizontal"></Category>
 
               {/* Best Seller section:  */}
             <SellSection 
                 title="Best Seller" 
-                ids={["GEM001", "GEM002", "GEM004", "GEM006", "GEM010", "GEM012", "GEM015", "GEM020"]}
+                ids={["J001", "J003", "J005", "J007", "GEM001", "GEM003", "GEM005", "GEM007"]}
             />
+
+                {/* Promotion Section*/ }
             <SellSection 
                 title="Promotion" 
-                ids={["GEM003", "GEM005", "GEM007", "GEM009", "GEM011", "GEM013", "GEM017", "GEM018"]}
+                ids={["J002", "J004", "J006", "J008", "GEM002", "GEM004", "GEM006", "GEM008"]}
+            />
+                {/* Latest*/ }
+            <SellSection 
+                title="Latest" 
+                ids={["J009", "J010", "J011", "J012", "GEM009", "GEM010", "GEM011", "GEM012"]}
             />
         </>
      );
