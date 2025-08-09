@@ -21,10 +21,10 @@ function Category({ layout = "horizontal", onCategoryClick }) {
   const containerClass =
     layout === "horizontal"
       ? "d-flex flex-row flex-wrap justify-content-center gap-2"
-      : "d-flex flex-column gap-2";
+      : "d-flex flex-column gap-2 align-items-center align-items-md-start";
 
   return (
-    <div className={containerClass}>
+    <div className={containerClass} >
       {categories.map((cat, index) => {
         const isActive = category?.toLowerCase() === cat.toLowerCase();
         return (
@@ -34,7 +34,7 @@ function Category({ layout = "horizontal", onCategoryClick }) {
             className={`btn ${
               isActive ? "btn-dark text-white" : "btn-outline-dark"
             }`}
-            style={{ textTransform: "capitalize" }}
+            style={{ textTransform: "capitalize", width:"200px" }}
             onClick={() => {
               if (onCategoryClick) onCategoryClick(); //close filter onclick
             }}

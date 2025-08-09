@@ -84,7 +84,7 @@ function Productlist() {
           <Category layout="v" />
         </div>
 
-        {/* Product List Content */}
+        {/* sort */}
         <div className="col-12 col-md-9">
           <div className="d-flex justify-content-end mb-4">
             <select
@@ -98,6 +98,7 @@ function Productlist() {
             </select>
           </div>
           
+          {/* product list */}
           <SellSection
             title={`Products in ${category}`}
             products={finalProducts}

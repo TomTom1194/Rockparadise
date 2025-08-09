@@ -1,4 +1,5 @@
 import Category from "../Components/Category";
+import GallerySection from "../Components/Home/GallerySection";
 import Hero from "../Components/Home/Hero";
 import SellSection from "../Components/Home/SellSection";
 
@@ -21,19 +22,22 @@ function Home() {
         <>
             
             <Hero></Hero>
-            <div className="d-flex flex-column align-items-center ">
+            <div className="d-flex flex-column align-items-center px-5">
                 <h2 className="text-center mt-5 mb-3 ">Categories</h2>
             <Category layout="horizontal"></Category>
             </div>
 
               {/* Sell Section */}
-            {homeSections.map((section, index) => (
+              {homeSections.map((section, index) => (
                 <SellSection
                     key={index}
                     title={section.title}
                     ids={section.ids}
                 />
             ))}
+
+            {/* Gallery Section added here */}
+            <GallerySection />
         </>
      );
 }

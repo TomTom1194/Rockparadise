@@ -4,7 +4,7 @@ import logo from '../images/logo.png'; // điều chỉnh path nếu khác
 
 function Footer() {
   return (
-    <footer className=" text-dark pt-4 pb-2 mt-5" style={{backgroundColor: "#e8e4d9"}}>
+    <footer className=" text-dark pt-4 pb-2 " style={{backgroundColor: "#e8e4d9"}}>
       <div className="container">
         <div className="row">
 

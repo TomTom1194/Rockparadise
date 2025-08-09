@@ -1,0 +1,146 @@
+[
+  {
+    "type": "Diamond",
+    "description": "Diamond. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a magna velit. Suspendisse potenti. Nam non interdum arcu. Sed a turpis ac urna ullamcorper vehicula. Sed ut est eget justo consectetur viverra. Quisque in risus velit. Proin laoreet, ipsum a dapibus semper, odio ipsum congue sapien, non posuere arcu dolor ut elit. Mauris tristique nisi sit amet velit pulvinar, non elementum sapien congue. Aliquam erat volutpat. Fusce euismod, dolor vel scelerisque ultrices, odio purus tincidunt orci, vel venenatis elit sem nec velit. Sed eu est vitae justo varius tincidunt. Nulla facilisi. Curabitur vel quam eget elit semper posuere. Aliquam erat volutpat. In hac habitasse platea dictumst. Nunc nec tortor in nunc bibendum cursus. Sed sit amet nisi sit amet velit pulvinar, non elementum sapien congue. Aliquam erat volutpat. Fusce euismod, dolor vel scelerisque ultrices, odio purus tincidunt orci, vel venenatis elit sem nec velit. Sed eu est vitae justo varius tincidunt. Nulla facilisi. Curabitur vel quam eget elit semper posuere. Aliquam erat volutpat. In hac habitasse platea dictumst. Nunc nec tortor in nunc bibendum cursus. Sed sit amet nisi sit amet velit pulvinar, non elementum sapien congue. Proin laoreet, ipsum a dapibus semper, odio ipsum congue sapien, non posuere arcu dolor ut elit. Mauris tristique nisi sit amet velit pulvinar, non elementum sapien congue. Aliquam erat volutpat. Fusce euismod, dolor vel scelerisque ultrices, odio purus tincidunt orci, vel venenatis elit sem nec velit. Sed eu est vitae justo varius tincidunt. Nulla facilisi. Curabitur vel quam eget elit semper posuere. Aliquam erat volutpat.",
+    "smalldesc": "Diamond, with its exceptional brilliance and hardness, is a symbol of enduring strength and timeless beauty, highly prized in fine jewelry for its unparalleled sparkle.",
+    "mainImage": "https://placehold.co/600x400/000000/FFFFFF?text=Main+Diamond",
+    "images": [
+      "https://placehold.co/600x400/000000/FFFFFF?text=Diamond+1",
+      "https://placehold.co/600x400/000000/FFFFFF?text=Diamond+2",
+      "https://placehold.co/600x400/000000/FFFFFF?text=Diamond+3",
+      "https://placehold.co/600x400/000000/FFFFFF?text=Diamond+4",
+      "https://placehold.co/600x400/000000/FFFFFF?text=Diamond+5",
+      "https://placehold.co/600x400/000000/FFFFFF?text=Diamond+6",
+      "https://placehold.co/600x400/000000/FFFFFF?text=Diamond+7",
+      "https://placehold.co/600x400/000000/FFFFFF?text=Diamond+8",
+      "https://placehold.co/600x400/000000/FFFFFF?text=Diamond+9",
+      "https://placehold.co/600x400/000000/FFFFFF?text=Diamond+10"
+    ]
+  },
+  {
+    "type": "Quartz",
+    "description": "Quartz. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a magna velit. Suspendisse potenti. Nam non interdum arcu. Sed a turpis ac urna ullamcorper vehicula. Sed ut est eget justo consectetur viverra. Quisque in risus velit. Proin laoreet, ipsum a dapibus semper, odio ipsum congue sapien, non posuere arcu dolor ut elit. Mauris tristique nisi sit amet velit pulvinar, non elementum sapien congue. Aliquam erat volutpat. Fusce euismod, dolor vel scelerisque ultrices, odio purus tincidunt orci, vel venenatis elit sem nec velit. Sed eu est vitae justo varius tincidunt. Nulla facilisi. Curabitur vel quam eget elit semper posuere. Aliquam erat volutpat. In hac habitasse platea dictumst. Nunc nec tortor in nunc bibendum cursus. Sed sit amet nisi sit amet velit pulvinar, non elementum sapien congue. Aliquam erat volutpat. Fusce euismod, dolor vel scelerisque ultrices, odio purus tincidunt orci, vel venenatis elit sem nec velit. Sed eu est vitae justo varius tincidunt. Nulla facilisi. Curabitur vel quam eget elit semper posuere. Aliquam erat volutpat. In hac habitasse platea dictumst. Nunc nec tortor in nunc bibendum cursus. Sed sit amet nisi sit amet velit pulvinar, non elementum sapien congue. Proin laoreet, ipsum a dapibus semper, odio ipsum congue sapien, non posuere arcu dolor ut elit. Mauris tristique nisi sit amet velit pulvinar, non elementum sapien congue. Aliquam erat volutpat. Fusce euismod, dolor vel scelerisque ultrices, odio purus tincidunt orci, vel venenatis elit sem nec velit. Sed eu est vitae justo varius tincidunt. Nulla facilisi. Curabitur vel quam eget elit semper posuere. Aliquam erat volutpat.",
+    "smalldesc": "Quartz is a versatile mineral known for its crystalline structure and wide range of colors. It is a fundamental component of many gemstones and a popular choice for both decorative and industrial uses.",
+    "mainImage": "https://placehold.co/600x400/FFD700/000000?text=Main+Quartz",
+    "images": [
+      "https://placehold.co/600x400/FFD700/000000?text=Quartz+1",
+      "https://placehold.co/600x400/FFD700/000000?text=Quartz+2",
+      "https://placehold.co/600x400/FFD700/000000?text=Quartz+3",
+      "https://placehold.co/600x400/FFD700/000000?text=Quartz+4",
+      "https://placehold.co/600x400/FFD700/000000?text=Quartz+5",
+      "https://placehold.co/600x400/FFD700/000000?text=Quartz+6",
+      "https://placehold.co/600x400/FFD700/000000?text=Quartz+7",
+      "https://placehold.co/600x400/FFD700/000000?text=Quartz+8",
+      "https://placehold.co/600x400/FFD700/000000?text=Quartz+9",
+      "https://placehold.co/600x400/FFD700/000000?text=Quartz+10"
+    ]
+  },
+  {
+    "type": "Ruby",
+    "description": "Ruby. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a magna velit. Suspendisse potenti. Nam non interdum arcu. Sed a turpis ac urna ullamcorper vehicula. Sed ut est eget justo consectetur viverra. Quisque in risus velit. Proin laoreet, ipsum a dapibus semper, odio ipsum congue sapien, non posuere arcu dolor ut elit. Mauris tristique nisi sit amet velit pulvinar, non elementum sapien congue. Aliquam erat volutpat. Fusce euismod, dolor vel scelerisque ultrices, odio purus tincidunt orci, vel venenatis elit sem nec velit. Sed eu est vitae justo varius tincidunt. Nulla facilisi. Curabitur vel quam eget elit semper posuere. Aliquam erat volutpat. In hac habitasse platea dictumst. Nunc nec tortor in nunc bibendum cursus. Sed sit amet nisi sit amet velit pulvinar, non elementum sapien congue. Aliquam erat volutpat. Fusce euismod, dolor vel scelerisque ultrices, odio purus tincidunt orci, vel venenatis elit sem nec velit. Sed eu est vitae justo varius tincidunt. Nulla facilisi. Curabitur vel quam eget elit semper posuere. Aliquam erat volutpat. In hac habitasse platea dictumst. Nunc nec tortor in nunc bibendum cursus. Sed sit amet nisi sit amet velit pulvinar, non elementum sapien congue. Proin laoreet, ipsum a dapibus semper, odio ipsum congue sapien, non posuere arcu dolor ut elit. Mauris tristique nisi sit amet velit pulvinar, non elementum sapien congue. Aliquam erat volutpat. Fusce euismod, dolor vel scelerisque ultrices, odio purus tincidunt orci, vel venenatis elit sem nec velit. Sed eu est vitae justo varius tincidunt. Nulla facilisi. Curabitur vel quam eget elit semper posuere. Aliquam erat volutpat.",
+    "smalldesc": "Ruby, known as the 'King of Gems,' captivates with its deep red hue and brilliant luster. This precious stone symbolizes passion, prosperity, and protection, making it a timeless treasure.",
+    "mainImage": "https://placehold.co/600x400/DC143C/FFFFFF?text=Main+Ruby",
+    "images": [
+      "https://placehold.co/600x400/DC143C/FFFFFF?text=Ruby+1",
+      "https://placehold.co/600x400/DC143C/FFFFFF?text=Ruby+2",
+      "https://placehold.co/600x400/DC143C/FFFFFF?text=Ruby+3",
+      "https://placehold.co/600x400/DC143C/FFFFFF?text=Ruby+4",
+      "https://placehold.co/600x400/DC143C/FFFFFF?text=Ruby+5",
+      "https://placehold.co/600x400/DC143C/FFFFFF?text=Ruby+6",
+      "https://placehold.co/600x400/DC143C/FFFFFF?text=Ruby+7",
+      "https://placehold.co/600x400/DC143C/FFFFFF?text=Ruby+8",
+      "https://placehold.co/600x400/DC143C/FFFFFF?text=Ruby+9",
+      "https://placehold.co/600x400/DC143C/FFFFFF?text=Ruby+10"
+    ]
+  },
+  {
+    "type": "Sapphire",
+    "description": "Sapphire. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a magna velit. Suspendisse potenti. Nam non interdum arcu. Sed a turpis ac urna ullamcorper vehicula. Sed ut est eget justo consectetur viverra. Quisque in risus velit. Proin laoreet, ipsum a dapibus semper, odio ipsum congue sapien, non posuere arcu dolor ut elit. Mauris tristique nisi sit amet velit pulvinar, non elementum sapien congue. Aliquam erat volutpat. Fusce euismod, dolor vel scelerisque ultrices, odio purus tincidunt orci, vel venenatis elit sem nec velit. Sed eu est vitae justo varius tincidunt. Nulla facilisi. Curabitur vel quam eget elit semper posuere. Aliquam erat volutpat. In hac habitasse platea dictumst. Nunc nec tortor in nunc bibendum cursus. Sed sit amet nisi sit amet velit pulvinar, non elementum sapien congue. Aliquam erat volutpat. Fusce euismod, dolor vel scelerisque ultrices, odio purus tincidunt orci, vel venenatis elit sem nec velit. Sed eu est vitae justo varius tincidunt. Nulla facilisi. Curabitur vel quam eget elit semper posuere. Aliquam erat volutpat. In hac habitasse platea dictumst. Nunc nec tortor in nunc bibendum cursus. Sed sit amet nisi sit amet velit pulvinar, non elementum sapien congue. Proin laoreet, ipsum a dapibus semper, odio ipsum congue sapien, non posuere arcu dolor ut elit. Mauris tristique nisi sit amet velit pulvinar, non elementum sapien congue. Aliquam erat volutpat. Fusce euismod, dolor vel scelerisque ultrices, odio purus tincidunt orci, vel venenatis elit sem nec velit. Sed eu est vitae justo varius tincidunt. Nulla facilisi. Curabitur vel quam eget elit semper posuere. Aliquam erat volutpat.",
+    "smalldesc": "Sapphire is a brilliant gemstone revered for its deep blue color, symbolizing wisdom, loyalty, and nobility. It's a favorite for both engagement rings and sophisticated jewelry.",
+    "mainImage": "https://placehold.co/600x400/00008B/FFFFFF?text=Main+Sapphire",
+    "images": [
+      "https://placehold.co/600x400/00008B/FFFFFF?text=Sapphire+1",
+      "https://placehold.co/600x400/00008B/FFFFFF?text=Sapphire+2",
+      "https://placehold.co/600x400/00008B/FFFFFF?text=Sapphire+3",
+      "https://placehold.co/600x400/00008B/FFFFFF?text=Sapphire+4",
+      "https://placehold.co/600x400/00008B/FFFFFF?text=Sapphire+5",
+      "https://placehold.co/600x400/00008B/FFFFFF?text=Sapphire+6",
+      "https://placehold.co/600x400/00008B/FFFFFF?text=Sapphire+7",
+      "https://placehold.co/600x400/00008B/FFFFFF?text=Sapphire+8",
+      "https://placehold.co/600x400/00008B/FFFFFF?text=Sapphire+9",
+      "https://placehold.co/600x400/00008B/FFFFFF?text=Sapphire+10"
+    ]
+  },
+  {
+    "type": "Emerald",
+    "description": "Emerald. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a magna velit. Suspendisse potenti. Nam non interdum arcu. Sed a turpis ac urna ullamcorper vehicula. Sed ut est eget justo consectetur viverra. Quisque in risus velit. Proin laoreet, ipsum a dapibus semper, odio ipsum congue sapien, non posuere arcu dolor ut elit. Mauris tristique nisi sit amet velit pulvinar, non elementum sapien congue. Aliquam erat volutpat. Fusce euismod, dolor vel scelerisque ultrices, odio purus tincidunt orci, vel venenatis elit sem nec velit. Sed eu est vitae justo varius tincidunt. Nulla facilisi. Curabitur vel quam eget elit semper posuere. Aliquam erat volutpat. In hac habitasse platea dictumst. Nunc nec tortor in nunc bibendum cursus. Sed sit amet nisi sit amet velit pulvinar, non elementum sapien congue. Aliquam erat volutpat. Fusce euismod, dolor vel scelerisque ultrices, odio purus tincidunt orci, vel venenatis elit sem nec velit. Sed eu est vitae justo varius tincidunt. Nulla facilisi. Curabitur vel quam eget elit semper posuere. Aliquam erat volutpat. In hac habitasse platea dictumst. Nunc nec tortor in nunc bibendum cursus. Sed sit amet nisi sit amet velit pulvinar, non elementum sapien congue. Proin laoreet, ipsum a dapibus semper, odio ipsum congue sapien, non posuere arcu dolor ut elit. Mauris tristique nisi sit amet velit pulvinar, non elementum sapien congue. Aliquam erat volutpat. Fusce euismod, dolor vel scelerisque ultrices, odio purus tincidunt orci, vel venenatis elit sem nec velit. Sed eu est vitae justo varius tincidunt. Nulla facilisi. Curabitur vel quam eget elit semper posuere. Aliquam erat volutpat.",
+    "smalldesc": "Emerald is a precious gemstone characterized by its rich, vibrant green color. It is a symbol of rebirth, love, and good fortune, often admired for its deep, lush hue.",
+    "mainImage": "https://placehold.co/600x400/228B22/FFFFFF?text=Main+Emerald",
+    "images": [
+      "https://placehold.co/600x400/228B22/FFFFFF?text=Emerald+1",
+      "https://placehold.co/600x400/228B22/FFFFFF?text=Emerald+2",
+      "https://placehold.co/600x400/228B22/FFFFFF?text=Emerald+3",
+      "https://placehold.co/600x400/228B22/FFFFFF?text=Emerald+4",
+      "https://placehold.co/600x400/228B22/FFFFFF?text=Emerald+5",
+      "https://placehold.co/600x400/228B22/FFFFFF?text=Emerald+6",
+      "https://placehold.co/600x400/228B22/FFFFFF?text=Emerald+7",
+      "https://placehold.co/600x400/228B22/FFFFFF?text=Emerald+8",
+      "https://placehold.co/600x400/228B22/FFFFFF?text=Emerald+9",
+      "https://placehold.co/600x400/228B22/FFFFFF?text=Emerald+10"
+    ]
+  },
+  {
+    "type": "Topaz",
+    "description": "Topaz. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a magna velit. Suspendisse potenti. Nam non interdum arcu. Sed a turpis ac urna ullamcorper vehicula. Sed ut est eget justo consectetur viverra. Quisque in risus velit. Proin laoreet, ipsum a dapibus semper, odio ipsum congue sapien, non posuere arcu dolor ut elit. Mauris tristique nisi sit amet velit pulvinar, non elementum sapien congue. Aliquam erat volutpat. Fusce euismod, dolor vel scelerisque ultrices, odio purus tincidunt orci, vel venenatis elit sem nec velit. Sed eu est vitae justo varius tincidunt. Nulla facilisi. Curabitur vel quam eget elit semper posuere. Aliquam erat volutpat. In hac habitasse platea dictumst. Nunc nec tortor in nunc bibendum cursus. Sed sit amet nisi sit amet velit pulvinar, non elementum sapien congue. Aliquam erat volutpat. Fusce euismod, dolor vel scelerisque ultrices, odio purus tincidunt orci, vel venenatis elit sem nec velit. Sed eu est vitae justo varius tincidunt. Nulla facilisi. Curabitur vel quam eget elit semper posuere. Aliquam erat volutpat. In hac habitasse platea dictumst. Nunc nec tortor in nunc bibendum cursus. Sed sit amet nisi sit amet velit pulvinar, non elementum sapien congue. Proin laoreet, ipsum a dapibus semper, odio ipsum congue sapien, non posuere arcu dolor ut elit. Mauris tristique nisi sit amet velit pulvinar, non elementum sapien congue. Aliquam erat volutpat. Fusce euismod, dolor vel scelerisque ultrices, odio purus tincidunt orci, vel venenatis elit sem nec velit. Sed eu est vitae justo varius tincidunt. Nulla facilisi. Curabitur vel quam eget elit semper posuere. Aliquam erat volutpat.",
+    "smalldesc": "Topaz is a stunning silicate mineral that comes in a rainbow of colors, most notably a vibrant blue. It is prized for its affordability and striking beauty.",
+    "mainImage": "https://placehold.co/600x400/FFA500/000000?text=Main+Topaz",
+    "images": [
+      "https://placehold.co/600x400/FFA500/000000?text=Topaz+1",
+      "https://placehold.co/600x400/FFA500/000000?text=Topaz+2",
+      "https://placehold.co/600x400/FFA500/000000?text=Topaz+3",
+      "https://placehold.co/600x400/FFA500/000000?text=Topaz+4",
+      "https://placehold.co/600x400/FFA500/000000?text=Topaz+5",
+      "https://placehold.co/600x400/FFA500/000000?text=Topaz+6",
+      "https://placehold.co/600x400/FFA500/000000?text=Topaz+7",
+      "https://placehold.co/600x400/FFA500/000000?text=Topaz+8",
+      "https://placehold.co/600x400/FFA500/000000?text=Topaz+9",
+      "https://placehold.co/600x400/FFA500/000000?text=Topaz+10"
+    ]
+  },
+  {
+    "type": "Amethyst",
+    "description": "Amethyst. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a magna velit. Suspendisse potenti. Nam non interdum arcu. Sed a turpis ac urna ullamcorper vehicula. Sed ut est eget justo consectetur viverra. Quisque in risus velit. Proin laoreet, ipsum a dapibus semper, odio ipsum congue sapien, non posuere arcu dolor ut elit. Mauris tristique nisi sit amet velit pulvinar, non elementum sapien congue. Aliquam erat volutpat. Fusce euismod, dolor vel scelerisque ultrices, odio purus tincidunt orci, vel venenatis elit sem nec velit. Sed eu est vitae justo varius tincidunt. Nulla facilisi. Curabitur vel quam eget elit semper posuere. Aliquam erat volutpat. In hac habitasse platea dictumst. Nunc nec tortor in nunc bibendum cursus. Sed sit amet nisi sit amet velit pulvinar, non elementum sapien congue. Aliquam erat volutpat. Fusce euismod, dolor vel scelerisque ultrices, odio purus tincidunt orci, vel venenatis elit sem nec velit. Sed eu est vitae justo varius tincidunt. Nulla facilisi. Curabitur vel quam eget elit semper posuere. Aliquam erat volutpat. In hac habitasse platea dictumst. Nunc nec tortor in nunc bibendum cursus. Sed sit amet nisi sit amet velit pulvinar, non elementum sapien congue. Proin laoreet, ipsum a dapibus semper, odio ipsum congue sapien, non posuere arcu dolor ut elit. Mauris tristique nisi sit amet velit pulvinar, non elementum sapien congue. Aliquam erat volutpat. Fusce euismod, dolor vel scelerisque ultrices, odio purus tincidunt orci, vel venenatis elit sem nec velit. Sed eu est vitae justo varius tincidunt. Nulla facilisi. Curabitur vel quam eget elit semper posuere. Aliquam erat volutpat.",
+    "smalldesc": "Amethyst is a mesmerizing violet variety of quartz, prized for its beautiful purple color. It is associated with tranquility, clarity, and protection, making it a popular choice for both jewelry and spiritual practices.",
+    "mainImage": "https://placehold.co/600x400/9966CC/FFFFFF?text=Main+Amethyst",
+    "images": [
+      "https://placehold.co/600x400/9966CC/FFFFFF?text=Amethyst+1",
+      "https://placehold.co/600x400/9966CC/FFFFFF?text=Amethyst+2",
+      "https://placehold.co/600x400/9966CC/FFFFFF?text=Amethyst+3",
+      "https://placehold.co/600x400/9966CC/FFFFFF?text=Amethyst+4",
+      "https://placehold.co/600x400/9966CC/FFFFFF?text=Amethyst+5",
+      "https://placehold.co/600x400/9966CC/FFFFFF?text=Amethyst+6",
+      "https://placehold.co/600x400/9966CC/FFFFFF?text=Amethyst+7",
+      "https://placehold.co/600x400/9966CC/FFFFFF?text=Amethyst+8",
+      "https://placehold.co/600x400/9966CC/FFFFFF?text=Amethyst+9",
+      "https://placehold.co/600x400/9966CC/FFFFFF?text=Amethyst+10"
+    ]
+  },
+  {
+    "type": "Opal",
+    "description": "Opal. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a magna velit. Suspendisse potenti. Nam non interdum arcu. Sed a turpis ac urna ullamcorper vehicula. Sed ut est eget justo consectetur viverra. Quisque in risus velit. Proin laoreet, ipsum a dapibus semper, odio ipsum congue sapien, non posuere arcu dolor ut elit. Mauris tristique nisi sit amet velit pulvinar, non elementum sapien congue. Aliquam erat volutpat. Fusce euismod, dolor vel scelerisque ultrices, odio purus tincidunt orci, vel venenatis elit sem nec velit. Sed eu est vitae justo varius tincidunt. Nulla facilisi. Curabitur vel quam eget elit semper posuere. Aliquam erat volutpat. In hac habitasse platea dictumst. Nunc nec tortor in nunc bibendum cursus. Sed sit amet nisi sit amet velit pulvinar, non elementum sapien congue. Aliquam erat volutpat. Fusce euismod, dolor vel scelerisque ultrices, odio purus tincidunt orci, vel venenatis elit sem nec velit. Sed eu est vitae justo varius tincidunt. Nulla facilisi. Curabitur vel quam eget elit semper posuere. Aliquam erat volutpat. In hac habitasse platea dictumst. Nunc nec tortor in nunc bibendum cursus. Sed sit amet nisi sit amet velit pulvinar, non elementum sapien congue. Proin laoreet, ipsum a dapibus semper, odio ipsum congue sapien, non posuere arcu dolor ut elit. Mauris tristique nisi sit amet velit pulvinar, non elementum sapien congue. Aliquam erat volutpat. Fusce euismod, dolor vel scelerisque ultrices, odio purus tincidunt orci, vel venenatis elit sem nec velit. Sed eu est vitae justo varius tincidunt. Nulla facilisi. Curabitur vel quam eget elit semper posuere. Aliquam erat volutpat.",
+    "smalldesc": "Opal is a unique and captivating gemstone known for its stunning 'play-of-color' effect. It is a hydrated amorphous form of silica, celebrated for its vibrant, iridescent flashes of light.",
+    "mainImage": "https://placehold.co/600x400/87CEEB/000000?text=Main+Opal",
+    "images": [
+      "https://placehold.co/600x400/87CEEB/000000?text=Opal+1",
+      "https://placehold.co/600x400/87CEEB/000000?text=Opal+2",
+      "https://placehold.co/600x400/87CEEB/000000?text=Opal+3",
+      "https://placehold.co/600x400/87CEEB/000000?text=Opal+4",
+      "https://placehold.co/600x400/87CEEB/000000?text=Opal+5",
+      "https://placehold.co/600x400/87CEEB/000000?text=Opal+6",
+      "https://placehold.co/600x400/87CEEB/000000?text=Opal+7",
+      "https://placehold.co/600x400/87CEEB/000000?text=Opal+8",
+      "https://placehold.co/600x400/87CEEB/000000?text=Opal+9",
+      "https://placehold.co/600x400/87CEEB/000000?text=Opal+10"
+    ]
+  }
+]
