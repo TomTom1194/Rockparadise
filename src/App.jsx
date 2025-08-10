@@ -21,13 +21,13 @@ function App() {
       <CartProvider>
       <Navbar />
 
-      <main >
+      <main style={{backgroundColor: "#ffff"}}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/faq" element={<Faq />} />
-          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/gallery/:type" element={<Gallery />} />
           <Route path="/category" element={<Category />} />
           <Route path="/product/:id" element={<ProductDetail/>} />
           <Route path="/cart" element={<Cart />} />

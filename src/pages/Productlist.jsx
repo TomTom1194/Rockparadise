@@ -36,10 +36,12 @@ function Productlist() {
       {/* Mobile/Desktop Header */}
       <div
         className="d-flex justify-content-between align-items-center mb-4"
-        style={{ position: "sticky", top: navbarHeight, zIndex: 10, background: "#fff" }}
+        style={{ position: "sticky", top: navbarHeight, zIndex: 10, 
+          // background: "#fff" 
+        }}
       >
         <button
-          className="btn btn-outline-secondary"
+          className="btn btn-outline-secondary bg-white"
           onClick={() => navigate(-1)}
         >
           ← Back

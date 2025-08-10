@@ -16,7 +16,7 @@ function Hero() {
           <div className="carousel-caption custom-caption-bottom ">
             <h2>Discover Rare Gemstones</h2>
             <p>Elegant. Timeless. Unique.</p>
-            <Link className="btn btn-light" to="/category">Explore</Link>
+            <Link className="btn btn-light" to="/viewmore/BestSeller">Explore</Link>
           </div>
         </div>
 
@@ -26,7 +26,7 @@ function Hero() {
           <div className="carousel-caption custom-caption-bottom c">
             <h2>Luxury Jewelry Collection</h2>
             <p>Crafted with passion and precision.</p>
-            <Link className="btn btn-light" to="/gallery">View Gallery</Link>
+            <Link className="btn btn-light" to="/viewmore/Promotion">Explore</Link>
           </div>
         </div>
 

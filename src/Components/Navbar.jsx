@@ -59,10 +59,10 @@ function Navbar() {
               <Link className="nav-link text-dark" to="/faq">FAQ</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link text-dark" to="/gallery">Gallery</Link>
+              <Link className="nav-link text-dark" to="/gallery/Diamond">Gallery</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link text-dark" to="/category">Category</Link>
+              <Link className="nav-link text-dark" to="/productlist/Diamond">Category</Link>
             </li>
           </ul>
         </div>
