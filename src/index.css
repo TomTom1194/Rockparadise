@@ -61,7 +61,6 @@ html {
 
 .nav-link {
   position: relative;
-  transition: color 0.3s ease;
 }
 
 .nav-link::after {
@@ -75,9 +74,13 @@ html {
   transition: width 0.3s ease;
 }
 
-.nav-link:hover::after {
+.nav-link:hover::after,
+.nav-link.active::after {
   width: 100%;
 }
+
+
+
 
 .custom-card-hover {
   transition: all 0.3s ease;
@@ -100,7 +103,7 @@ html {
 }
 
 .btn-addtocart {
-  background-color: #6b4c3b; /* Nâu sậm */
+  background-color: #6b4c3b; 
   color: white;
   border: 1px solid #6b4c3b;
   transition: background-color 0.3s, color 0.3s;

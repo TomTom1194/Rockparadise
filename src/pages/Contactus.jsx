@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 function ContactUs()  {
   return (
     <div className="container py-4">
-      <section className="text-center mb-5">
+      <section className="text-center mb-5 mt-5">
         <h2>Contact Us</h2>
         <p>Reach out to discover the perfect piece that tells your story.</p>
       </section>
@@ -34,7 +34,7 @@ function ContactUs()  {
             <input type="text" className="form-control" placeholder="Name" required />
             <input type="email" className="form-control" placeholder="Email Address" required />
             <textarea className="form-control" placeholder="Message" rows="5" required></textarea>
-            <button type="submit" className="btn btn-primary">Submit</button>
+            <button type="submit" className="btn btn-addtocart">Submit</button>
           </form>
           <p className="mt-3 text-muted small">
             We value your privacy. Your message and personal details will be kept confidential and used solely to assist you.

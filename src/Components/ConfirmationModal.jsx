@@ -48,7 +48,8 @@ function ConfirmationModal({ show, handleClose, handleConfirm, title, message })
             </button>
             <button 
               type="button" 
-              className="btn btn-primary" 
+              className="btn btn-addtocart" 
+              
               onClick={handleConfirm}
             >
               Confirm

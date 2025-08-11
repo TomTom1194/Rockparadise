@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import logo from "../images/logo.png"; 
 import CartDropdown from './CartDropdown';
 import { FaShoppingCart } from "react-icons/fa";
@@ -9,8 +9,14 @@ function Navbar() {
   const [showDropdown, setShowDropdown] = useState(false);
   const { cartItems } = useCart();
   const dropdownRef = useRef(null);
+  const location = useLocation();
 
-  // Đóng dropdown khi click ra ngoài
+  
+  const isCategoryActive = location.pathname.startsWith("/productlist");
+  const isGalleryActive = location.pathname.startsWith("/gallery");
+
+
+  
   useEffect(() => {
     function handleClickOutside(event) {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
@@ -26,14 +32,14 @@ function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg bg-white px-3 shadow-sm ps-lg-5 fixed-top">
       <div className="container-fluid">
-        <Link className="navbar-brand" to="/">
+        <NavLink className="navbar-brand" to="/">
           <img
             src={logo}
             alt="Logo"
             className="img-fluid"
             style={{ maxWidth: "120px" }}
           />
-        </Link>
+        </NavLink>
 
         <button
           className="navbar-toggler order-2 order-lg-3"
@@ -48,21 +54,31 @@ function Navbar() {
         </button>
 
         <div className="collapse navbar-collapse justify-content-end order-3" id="navbarLinks">
-          <ul className="navbar-nav d-flex justify-content-lg-center w-100 text-lg-center text-end" style={{ fontWeight: "600", gap: "12px" }}>
+          <ul className="navbar-nav d-flex justify-content-lg-center w-100 text-lg-center text-end" style={{ fontWeight: "300", gap: "12px", fontSize: "1.5rem" }}>
             <li className="nav-item">
-              <Link className="nav-link text-dark" to="/about">About Us</Link>
+              <NavLink className="nav-link text-dark" to="/about">About Us</NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link text-dark" to="/contact">Contact Us</Link>
+              <NavLink className="nav-link text-dark" to="/contact">Contact Us</NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link text-dark" to="/faq">FAQ</Link>
+              <NavLink className="nav-link text-dark" to="/faq">FAQ</NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link text-dark" to="/gallery/Diamond">Gallery</Link>
+              <NavLink 
+              to="/gallery/Diamond"
+               className={`nav-link text-dark ${isGalleryActive ? "active" : ""}`}
+              >
+                Gallery
+                </NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link text-dark" to="/productlist/Diamond">Category</Link>
+              <NavLink
+                to="/productlist/Diamond"
+                className={`nav-link text-dark ${isCategoryActive ? "active" : ""}`}
+              >
+                Category
+              </NavLink>
             </li>
           </ul>
         </div>
@@ -73,16 +89,16 @@ function Navbar() {
             onClick={() => setShowDropdown(!showDropdown)}
           >
             <FaShoppingCart size={24} />
-             {cartItems.length > 0 && (
+            {cartItems.length > 0 && (
               <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                 {cartItems.length}
               </span>
-              )}
+            )}
           </button>
 
           {showDropdown && (
             <div className="dropdown-menu show position-absolute end-0 mt-2 z-3 cart-dropdown-mobile" style={{ minWidth: "300px" }}>
-              <CartDropdown closeDropdown={() => setShowDropdown(false)}/>
+              <CartDropdown closeDropdown={() => setShowDropdown(false)} />
             </div>
           )}
         </div>

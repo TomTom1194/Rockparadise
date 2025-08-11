@@ -30,6 +30,23 @@ function Hero() {
           </div>
         </div>
 
+        {/* Slide 3 */}
+        <div className="carousel-item">
+          <img
+            src="https://images.unsplash.com/photo-1522001947148-8b4dfe064edc?q=80&w=746&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            className="d-block w-100"
+            alt="Gemstone 3"
+            style={{ height: "80vh", objectFit: "cover", objectPosition: "center 18%"  }}
+          />
+          <div className="carousel-caption custom-caption-bottom">
+            <h2>Latest Arrivals</h2>
+            <p>Fresh styles, just for you.</p>
+            <Link className="btn btn-light" to="/viewmore/Latest">
+              Explore
+            </Link>
+          </div>
+        </div>
+
       </div>
 
       {/* Navigation buttons */}

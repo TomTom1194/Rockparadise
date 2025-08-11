@@ -1,16 +1,34 @@
-import React from "react";
+import React, {useState} from "react";
 import { useCart } from "../context/CartContext";
 import { Link, useNavigate } from "react-router-dom";
 import { FaTrashAlt } from "react-icons/fa";
+import ConfirmationModal from "./ConfirmationModal";
 
 function CartDropdown({ closeDropdown }) {
   const { cartItems, updateQuantity, removeFromCart } = useCart();
   const navigate = useNavigate();
+  
 
   const totalPrice = cartItems.reduce(
     (sum, item) => sum + item.price * item.quantity,
     0
   );
+
+  const [showModal, setShowModal] = useState(false);
+  const [selectedItemId, setSelectedItemId] = useState(null);
+
+     const handleDeleteClick = (itemId) => {
+    setSelectedItemId(itemId);
+    setShowModal(true);
+  };
+
+    const handleConfirmDelete = () => {
+    if (selectedItemId) {
+      removeFromCart(selectedItemId);
+    }
+    setShowModal(false);
+    setSelectedItemId(null);
+  };
 
   return (
     <div className="p-3 shadow bg-white rounded" style={{ minWidth: "300px" }}>
@@ -92,7 +110,7 @@ function CartDropdown({ closeDropdown }) {
 
                 <button
                   className="btn btn-sm btn-link mt-1"
-                  onClick={() => removeFromCart(item.id)}
+                  onClick={() => handleDeleteClick(item.id)}
                   style={{ color: "black" }}
                 >
                   <FaTrashAlt />
@@ -117,6 +135,14 @@ function CartDropdown({ closeDropdown }) {
           </button>
         </>
       )}
+
+      <ConfirmationModal
+        show={showModal}
+        handleClose={() => setShowModal(false)}
+        handleConfirm={handleConfirmDelete}
+        title="Confirm Delete"
+        message="Are you sure you want to remove this item from your cart?"
+      />
     </div>
   );
 }

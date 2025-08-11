@@ -41,7 +41,7 @@ function Productlist() {
         }}
       >
         <button
-          className="btn btn-outline-secondary bg-white"
+          className="btn btn-outline-secondary  "
           onClick={() => navigate(-1)}
         >
           ← Back

@@ -47,7 +47,7 @@ function GalleryFullWidth() {
       <div
         className=" text-white d-flex align-items-center justify-content-center"
         style={{
-          height: "300px",
+          height: "70vh",
           backgroundImage: `url(${selectedGallery.mainImage})`,
           backgroundSize: "cover",
           backgroundPosition: "center",

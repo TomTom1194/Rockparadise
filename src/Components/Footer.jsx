@@ -1,8 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink,useLocation } from 'react-router-dom';
 import logo from '../images/logo.png'; // điều chỉnh path nếu khác
 
 function Footer() {
+  const location = useLocation();
+  const isCategoryActive = location.pathname.startsWith("/productlist");
+  const isGalleryActive = location.pathname.startsWith("/gallery");
   return (
     <footer className=" text-dark pt-4 pb-2 " style={{backgroundColor: "#e8e4d9"}}>
       <div className="container">
@@ -13,11 +16,22 @@ function Footer() {
             <img src={logo} alt="Logo" style={{ maxWidth: '200px' }} className="img-fluid" />
           </div>
             <ul className="d-flex flex-column gap-3  col-12 col-sm-6 col-md-3 col-lg-4 mb-4 text-center text-md-start list-unstyled" style={{fontWeight: "300", fontSize: "20px"}}>
-              <li><Link to="/contact" className="text-dark text-decoration-none ">Contact Us</Link></li>
-              <li><Link to="/about" className="text-dark text-decoration-none ">About Us</Link></li>
-              <li><Link to="/faq" className="text-dark text-decoration-none ">FAQ</Link></li>
-              <li><Link to="/category" className="text-dark text-decoration-none ">Category</Link></li>
-              <li><Link to="/gallery" className="text-dark text-decoration-none ">Gallery</Link></li>
+              <li><NavLink to="/contact" className="text-dark text-decoration-none ">Contact Us</NavLink></li>
+              <li><NavLink to="/about" className="text-dark text-decoration-none ">About Us</NavLink></li>
+              <li><NavLink to="/faq" className="text-dark text-decoration-none ">FAQ</NavLink></li>
+              <li><NavLink
+                    to="/productlist/Diamond"
+                    className={`text-dark text-decoration-none ${isCategoryActive ? "active" : ""}`}
+                    >
+                      Category
+                  </NavLink>
+              </li>
+              <li><NavLink 
+                    to="/gallery/Diamond"
+                    className={`text-dark text-decoration-none ${isGalleryActive ? "active" : ""}`}
+                    >
+                      Gallery
+                  </NavLink></li>
             </ul>
 
           {/* Google Map */}

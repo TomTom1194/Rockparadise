@@ -31,8 +31,8 @@ function Category({ layout = "horizontal", onCategoryClick }) {
           <Link
             key={index}
             to={`/productlist/${cat}`}
-            className={`btn ${
-              isActive ? "btn-dark text-white" : "btn-outline-dark"
+            className={`btn  ${
+              isActive ? "btn-dark text-white " : "btn-outline-dark"
             }`}
             style={{ textTransform: "capitalize", width:"200px" }}
             onClick={() => {

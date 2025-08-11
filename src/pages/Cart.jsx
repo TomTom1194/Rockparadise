@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { useCart } from "../context/CartContext";
 import { Link } from "react-router-dom";
 import { FaTrashAlt } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
+import ConfirmationModal from "../Components/ConfirmationModal";
 
 function Cart() {
   const { cartItems, updateQuantity, totalPrice, removeFromCart } = useCart();
   const navigate = useNavigate();
+
+    const [showModal, setShowModal] = useState(false);
+     const [selectedItemId, setSelectedItemId] = useState(null);
 
   if (cartItems.length === 0) {
     return (
@@ -18,6 +22,19 @@ function Cart() {
       </div>
     );
   }
+
+    const handleDeleteClick = (itemId) => {
+    setSelectedItemId(itemId);
+    setShowModal(true);
+  };
+
+    const handleConfirmDelete = () => {
+    if (selectedItemId) {
+      removeFromCart(selectedItemId);
+    }
+    setShowModal(false);
+    setSelectedItemId(null);
+  };
 
   return (
     <div className="container my-5">
@@ -65,7 +82,7 @@ function Cart() {
                 </p>
                 <button
                   className="btn btn-sm btn-link p-0"
-                  onClick={() => removeFromCart(item.id)}
+                  onClick={() => handleDeleteClick(item.id)}
                   style={{ color: "black", fontSize: "1.5rem" }}
                 >
                   <FaTrashAlt />
@@ -92,6 +109,14 @@ function Cart() {
           Pay Now
         </button>
       </div>
+
+      <ConfirmationModal
+        show={showModal}
+        handleClose={() => setShowModal(false)}
+        handleConfirm={handleConfirmDelete}
+        title="Confirm Delete"
+        message="Are you sure you want to remove this item from your cart?"
+      />
     </div>
   );
 }
