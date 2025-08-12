@@ -35,10 +35,10 @@ function AboutUs() {
             zIndex: '0',
           }}
         ></div>
-        <h1 className="display-5 fw-bold" style={{ zIndex: '1' }}>
+        <h1 className="display-5 fw-bold" style={{ zIndex: '1' }} data-aos="fade-up">
           All Jewels Living with Art
         </h1>
-        <p className="lead" style={{ maxWidth: '800px', zIndex: '1' }}>
+        <p className="lead" style={{ maxWidth: '800px', zIndex: '1' }} data-aos="fade-up" data-aos-delay="200">
           Cube stories unfold in sculpted gold. At Rock Paradise, every piece is
           a quiet dialogue between timeless elegance and contemporary soul.
         </p>
@@ -76,12 +76,6 @@ function AboutUs() {
               src="https://i.pinimg.com/736x/b8/56/5d/b8565de877bbf2406bd9a8b1eadbada7.jpg"
               alt="Rock Paradise Atelier"
               className="img-fluid rounded shadow-lg mt-4 mt-md-0"
-              // style={{
-              //   objectFit: 'cover',
-              //   width: '100%',
-              //   height: '400px',
-              //   objectPosition: 'center 30%',
-              // }}
             />
           </div>
         </section>
