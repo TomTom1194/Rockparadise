@@ -11,12 +11,19 @@ function Navbar() {
   const dropdownRef = useRef(null);
   const location = useLocation();
 
-  
   const isCategoryActive = location.pathname.startsWith("/productlist");
   const isGalleryActive = location.pathname.startsWith("/gallery");
 
+  // Hàm đóng collapse khi click link
+  const closeNavbar = () => {
+    const navbarCollapse = document.getElementById("navbarLinks");
+    if (navbarCollapse && navbarCollapse.classList.contains("show")) {
+      // Dùng bootstrap collapse API
+      const bsCollapse = window.bootstrap.Collapse.getInstance(navbarCollapse);
+      bsCollapse.hide();
+    }
+  };
 
-  
   useEffect(() => {
     function handleClickOutside(event) {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
@@ -32,7 +39,7 @@ function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg bg-white px-3 shadow-sm ps-lg-5 fixed-top">
       <div className="container-fluid">
-        <NavLink className="navbar-brand" to="/">
+        <NavLink className="navbar-brand" to="/" onClick={closeNavbar}>
           <img
             src={logo}
             alt="Logo"
@@ -54,28 +61,33 @@ function Navbar() {
         </button>
 
         <div className="collapse navbar-collapse justify-content-end order-3" id="navbarLinks">
-          <ul className="navbar-nav d-flex justify-content-lg-center w-100 text-lg-center text-end" style={{ fontWeight: "300", gap: "12px", fontSize: "1rem" }}>
+          <ul
+            className="navbar-nav d-flex justify-content-lg-center w-100 text-lg-center text-end"
+            style={{ fontWeight: "300", gap: "12px", fontSize: "1rem" }}
+          >
             <li className="nav-item">
-              <NavLink className="nav-link text-dark" to="/about">About Us</NavLink>
+              <NavLink className="nav-link text-dark" to="/about" onClick={closeNavbar}>About Us</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link text-dark" to="/contact">Contact Us</NavLink>
+              <NavLink className="nav-link text-dark" to="/contact" onClick={closeNavbar}>Contact Us</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link text-dark" to="/faq">FAQ</NavLink>
+              <NavLink className="nav-link text-dark" to="/faq" onClick={closeNavbar}>FAQ</NavLink>
             </li>
             <li className="nav-item">
               <NavLink 
-              to="/gallery/Diamond"
-               className={`nav-link text-dark ${isGalleryActive ? "active" : ""}`}
+                to="/gallery/Diamond"
+                className={`nav-link text-dark ${isGalleryActive ? "active" : ""}`}
+                onClick={closeNavbar}
               >
                 Gallery
-                </NavLink>
+              </NavLink>
             </li>
             <li className="nav-item">
               <NavLink
                 to="/productlist/Diamond"
                 className={`nav-link text-dark ${isCategoryActive ? "active" : ""}`}
+                onClick={closeNavbar}
               >
                 Category
               </NavLink>
@@ -97,7 +109,10 @@ function Navbar() {
           </button>
 
           {showDropdown && (
-            <div className="dropdown-menu show position-absolute end-0 mt-2 z-3 cart-dropdown-mobile" style={{ minWidth: "300px" }}>
+            <div
+              className="dropdown-menu show position-absolute end-0 mt-2 z-3 cart-dropdown-mobile"
+              style={{ minWidth: "300px" }}
+            >
               <CartDropdown closeDropdown={() => setShowDropdown(false)} />
             </div>
           )}

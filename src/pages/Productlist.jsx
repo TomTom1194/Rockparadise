@@ -3,8 +3,15 @@ import { useParams, useNavigate } from "react-router-dom";
 import rockData from "../data/rock.json";
 import SellSection from "../Components/Home/SellSection";
 import Category from "../Components/Category";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 function Productlist() {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
+
   const { category } = useParams();
   const navigate = useNavigate();
   const [showCategory, setShowCategory] = useState(false);
@@ -32,17 +39,18 @@ function Productlist() {
   const finalProducts = sortedProducts;
 
   return (
-    <div className="container py-5">
+    <div className="container py-5 ">
       {/* Mobile/Desktop Header */}
       <div
-        className="d-flex justify-content-between align-items-center mb-4"
-        style={{ position: "sticky", top: navbarHeight, zIndex: 10, 
-          // background: "#fff" 
+        className="d-flex justify-content-between align-items-center mb-1 "
+        style={{ position: "sticky", top: "121px", zIndex: 10, 
+          background: "#fff" 
         }}
       >
         <button
           className="btn btn-outline-secondary  "
           onClick={() => navigate(-1)}
+          
         >
           ← Back
         </button>
@@ -51,6 +59,7 @@ function Productlist() {
             showCategory ? "btn-dark text-white" : "btn-outline-dark text-dark"
           }`}
           onClick={() => setShowCategory(!showCategory)}
+          
         >
           <i className="bi bi-filter"></i> Filter
         </button>
@@ -62,8 +71,8 @@ function Productlist() {
           className="d-md-none mb-4"
           style={{
             position: "sticky",
-            top: navbarHeight + 40,
-            zIndex: 1000,
+            top: "155px",
+            zIndex: 9,
             background: "#fff",
             padding: "10px 0"
           }}
@@ -72,23 +81,24 @@ function Productlist() {
         </div>
       )}
 
-      <div className="row mt-md-5">
+      <div className="row mt-md-5 ">
         {/* Desktop Sidebar */}
         <div
           className="d-none d-md-block col-md-3"
           style={{
             position: "sticky",
-            top: navbarHeight + 40,
+            top:"121px",
             alignSelf: "flex-start",
             zIndex: 1
           }}
+          data-aos="fade-right"
         >
           <Category layout="v" />
         </div>
 
         {/* sort */}
-        <div className="col-12 col-md-9">
-          <div className="d-flex justify-content-end mb-4">
+        <div className="col-12 col-md-9 overflow-hidden" >
+          <div className="d-flex justify-content-end mb-4" data-aos="fade-left">
             <select
               className="form-select w-auto"
               value={sortOrder}
@@ -101,11 +111,13 @@ function Productlist() {
           </div>
           
           {/* product list */}
+          <div className="overflow-hidden" data-aos="fade-left">
           <SellSection
             title={`Products in ${category}`}
             products={finalProducts}
             showViewMoreButton={false}
           />
+          </div>
         </div>
       </div>
     </div>

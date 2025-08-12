@@ -2,8 +2,16 @@ import Category from "../Components/Category";
 import GallerySection from "../Components/Home/GallerySection";
 import Hero from "../Components/Home/Hero";
 import SellSection from "../Components/Home/SellSection";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+
 
 function Home() {
+useEffect(() => {
+  AOS.init({ duration: 1000, once: true });
+}, []);
+
     const homeSections = [
   {
     title: "Best Seller",
@@ -18,26 +26,37 @@ function Home() {
     ids: ["J009", "J010", "J011", "J012", "GEM009", "GEM010", "GEM011", "GEM012"]
   }
 ];
+
+  [...document.querySelectorAll('*')].forEach(el => {
+  if (el.scrollWidth > document.documentElement.clientWidth) {
+    console.log('Overflow element:', el, 'scrollWidth:', el.scrollWidth, 'clientWidth:', el.clientWidth);
+  }
+});
     return ( 
         <>
-            
-            <Hero></Hero>
-            <div className="d-flex flex-column align-items-center px-5">
+            <div data-aos="fade-up">
+            <Hero ></Hero>
+            </div>
+
+            <div className="d-flex flex-column align-items-center px-5" data-aos="fade-up">
                 <h2 className="text-center mt-5 mb-3 ">Categories</h2>
             <Category layout="horizontal"></Category>
             </div>
 
               {/* Sell Section */}
               {homeSections.map((section, index) => (
+               <div key={index} data-aos="fade-up">
                 <SellSection
-                    key={index}
-                    title={section.title}
-                    ids={section.ids}
+                  title={section.title}
+                  ids={section.ids}
                 />
-            ))}
+              </div>
+              ))}
 
             {/* Gallery Section added here */}
+            <div data-aos="fade-up">
             <GallerySection />
+            </div>
         </>
      );
 }

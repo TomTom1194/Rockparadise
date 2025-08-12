@@ -3,8 +3,16 @@ import { useParams, useNavigate, useLocation } from "react-router-dom";
 import rockData from "../data/rock.json";
 import SellSection from "../Components/Home/SellSection";
 import Category from "../Components/Category";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+
 
 function ViewmoreList() {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
+
   const { title } = useParams();
   const navigate = useNavigate();
   const location = useLocation();
@@ -36,34 +44,40 @@ function ViewmoreList() {
   }
 
   return (
-    <div className="container py-5">
-      <div className="d-flex justify-content-between align-items-center mb-4">
+ <div className="container py-5">
+      <div
+        className="d-flex justify-content-between align-items-center mb-4 sticky-top py-3 "
+        style={{ top: "121px", zIndex: 10, background: "#fff", overflow: "hidden" }}
+      >
         <button
           className="btn btn-outline-secondary"
           onClick={() => navigate(-1)}
+          data-aos="fade-right"
         >
           ← Back
         </button>
 
-        {/* Dropdown  */}
         <select
-          className="form-select w-auto"
+          className="form-select w-auto "
           value={sortOrder}
           onChange={(e) => setSortOrder(e.target.value)}
+          data-aos="fade-left"
         >
           <option value="default">Default Sort</option>
           <option value="low-to-high">Price: Low to High</option>
           <option value="high-to-low">Price: High to Low</option>
         </select>
       </div>
-
-      <SellSection
-        title={`${displayTitle}`}
-        products={sortedProducts} 
-        showViewMoreButton={false}
-      />
-    </div>
-  );
+      
+      {/* product list */}
+      <div className="overflow-hidden" data-aos="fade-up">
+        <SellSection
+          title={`Products in ${displayTitle}`}
+          products={sortedProducts} 
+          showViewMoreButton={false}
+        />
+      </div>
+    </div>  );
 }
 
 export default ViewmoreList;

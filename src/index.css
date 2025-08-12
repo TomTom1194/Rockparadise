@@ -16,6 +16,10 @@ html {
   font-family: "Poppins", sans-serif;
 }
 
+/* html,body {
+  overflow-x: hidden;
+} */
+
 .custom-carousel-btn {
   width: 60px;
   height: 60px;
@@ -150,3 +154,19 @@ input[type="number"] {
   font-size: 28px !important; 
   color: white;
 }
+
+.btn-outline-secondary {
+  background-color: #fff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-outline-secondary:hover {
+  background-color: black;
+}
+
+.custom-li {
+  font-size: 16px;
+}
+
+
+
