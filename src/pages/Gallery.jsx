@@ -146,7 +146,7 @@ function GalleryFullWidth() {
       <div
         className="container text-center mb-3 mt-3"
       >
-        <h2 className="fw-light m-0">TFrom Our {type}'s' Gallery</h2>
+        <h2 className="fw-light m-0">From Our {type}'s' Gallery</h2>
       </div>
 
       {/* Description */}
