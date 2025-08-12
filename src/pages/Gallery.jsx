@@ -56,6 +56,8 @@ function GalleryFullWidth() {
         <h1 className="fw-bold">{selectedGallery.type}</h1>
       </div>
 
+      
+
         {isMobile && (
           <div className="mt-3"
             style={{
@@ -140,9 +142,13 @@ function GalleryFullWidth() {
         className="container text-center mb-3 mt-3"
       >
         <h2 className="fw-light m-0">From Our Gallery of {type}</h2>
-
-        
       </div>
+
+      {/* Description */}
+      <div className="container text-center mb-3 mt-3">
+        <p className="mt-2 text-muted">{selectedGallery.description}</p>
+      </div>
+
 
 
       {/* Grid Gallery */}

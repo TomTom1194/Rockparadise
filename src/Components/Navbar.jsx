@@ -54,7 +54,7 @@ function Navbar() {
         </button>
 
         <div className="collapse navbar-collapse justify-content-end order-3" id="navbarLinks">
-          <ul className="navbar-nav d-flex justify-content-lg-center w-100 text-lg-center text-end" style={{ fontWeight: "300", gap: "12px", fontSize: "1.5rem" }}>
+          <ul className="navbar-nav d-flex justify-content-lg-center w-100 text-lg-center text-end" style={{ fontWeight: "300", gap: "12px", fontSize: "1rem" }}>
             <li className="nav-item">
               <NavLink className="nav-link text-dark" to="/about">About Us</NavLink>
             </li>

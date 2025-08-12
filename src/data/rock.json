@@ -347,7 +347,7 @@
     "size": 1.0,
     "price": 100,
     "description": "This is a beautiful red amethyst from our special collection.",
-    "mainImage": "https://example.com/gemstone_1.jpg",
+    "mainImage": "https://images.unsplash.com/photo-1705575531401-7aafdfc0a3bc?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "productType": "gemstone"
   },
   {
@@ -366,12 +366,12 @@
     "id": "GEM003",
     "name": "Custom Gemstone 3",
     "type": "Ruby",
-    "color": "White",
+    "color": "Red",
     "brand": "Swarovski",
     "size": 1.2,
     "price": 200,
     "description": "This is a beautiful white ruby from our special collection.",
-    "mainImage": "https://example.com/gemstone_3.jpg",
+    "mainImage": "https://images.unsplash.com/photo-1551122102-63cd339bfaab?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "productType": "gemstone"
   },
   {

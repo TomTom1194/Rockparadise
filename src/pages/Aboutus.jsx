@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import AOS from 'aos';
-// import 'aos/dist/aos.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import SellSection from "../Components/Home/SellSection";
 
@@ -9,21 +9,30 @@ const bestSellerData = {
   title: "Our Bestsellers",
   ids: ["J001", "J003", "J005", "J007", "GEM001", "GEM003", "GEM005", "GEM007"]
 };
-// const AboutUs = () => {
-// useEffect(() => {
-//   AOS.init({ duration: 1000, once: true });
-// }, []);
-function AboutUs()  {
+const AboutUs = () => {
+useEffect(() => {
+  AOS.init({ duration: 1000, once: true });
+}, []);
+// function AboutUs()  {
   return (
     <div className="container py-5">
       {/* Header Section */}
-      <section className="text-center mb-5">
-        <h1 className="display-5 fw-bold">All Jewels Living with Art</h1>
-        <p className="lead">
-          Cube stories unfold in sculpted gold. At Rock Paradise, every piece is a quiet dialogue between timeless elegance and contemporary soul.
-        </p>
-        {/* <Link to="/category" className="btn btn-dark mt-3">View Category</Link> */}
-      </section>
+     <section
+  className="text-center mb-5 text-white d-flex flex-column align-items-center justify-content-center"
+  style={{
+    backgroundImage: "url('https://i.pinimg.com/736x/4b/77/fc/4b77fccc10c64959324c6c8634847573.jpg')", // thay đường dẫn bằng ảnh bạn muốn
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    minHeight: "60vh",
+    padding: "40px"
+  }}
+>
+  <h1 className="display-5 fw-bold">All Jewels Living with Art</h1>
+  <p className="lead" style={{ maxWidth: "800px" }}>
+    Cube stories unfold in sculpted gold. At Rock Paradise, every piece is a quiet dialogue between timeless elegance and contemporary soul.
+  </p>
+</section>
+
 
       {/* Brand Story */}
       <section className="row align-items-center mb-5">
