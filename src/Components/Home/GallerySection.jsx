@@ -2,17 +2,12 @@
 import React, {useEffect} from 'react';
 import galleryData from '../../data/gallery.json';
 import { Link } from 'react-router-dom';
-import AOS from 'aos'; // Comment out AOS if not needed
-import 'aos/dist/aos.css'; // Comment out AOS if not needed
+import AOS from 'aos'; 
+import 'aos/dist/aos.css'; 
 
-/**
- * Component to display a section of gallery items using a Bootstrap 5 carousel.
- * Renders a horizontally scrollable list of cards with navigation controls.
- * @returns {JSX.Element} The GallerySection component with a Bootstrap carousel.
- */
 function GallerySection() {
     const itemsToShow = galleryData.slice(0, 8);
-    const itemsPerSlide = 4; // Display 4 items on desktop
+    const itemsPerSlide = 4; 
     const totalSlides = Math.ceil(itemsToShow.length / itemsPerSlide);
 
     useEffect(() => {
