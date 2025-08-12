@@ -82,8 +82,9 @@ function GalleryFullWidth() {
           className="position-absolute top-0 start-0 w-100 h-100"
           style={{ background: "rgba(0, 0, 0, 0.4)" }}
         ></div>
-        <div className="position-relative d-flex align-items-center justify-content-center h-100 p-3">
+        <div className="position-relative d-flex flex-column align-items-center justify-content-center h-100  " style={{padding: "0 10%"}}>
           <h1 className="text-white text-center text-capitalize">{selectedGallery.type} Gallery</h1>
+          <p className="text-white text-center">{selectedGallery.smalldesc}</p>
         </div>
       </div>
 
