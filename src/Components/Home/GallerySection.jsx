@@ -1,24 +1,29 @@
 // src/Components/GallerySection.jsx
-import React, {useEffect} from 'react';
+import React from 'react';
 import galleryData from '../../data/gallery.json';
 import { Link } from 'react-router-dom';
-import AOS from 'aos'; 
-import 'aos/dist/aos.css'; 
+// import AOS from 'aos'; // Comment out AOS if not needed
+// import 'aos/dist/aos.css'; // Comment out AOS if not needed
 
+/**
+ * Component to display a section of gallery items using a Bootstrap 5 carousel.
+ * Renders a horizontally scrollable list of cards with navigation controls.
+ * @returns {JSX.Element} The GallerySection component with a Bootstrap carousel.
+ */
 function GallerySection() {
     const itemsToShow = galleryData.slice(0, 8);
-    const itemsPerSlide = 4; 
+    const itemsPerSlide = 4; // Display 4 items on desktop
     const totalSlides = Math.ceil(itemsToShow.length / itemsPerSlide);
 
-    useEffect(() => {
-        AOS.init({
-            duration: 1000,
-            once: true,
-        });
-    }, []);
+    // useEffect(() => {
+    //     AOS.init({
+    //         duration: 1000,
+    //         once: true,
+    //     });
+    // }, []);
 
     return (
-        <section className=" p-5  position-relative" style={{ backgroundColor: "rgba(183, 174, 155, 1)" }}>
+        <section className="container p-5 my-5 position-relative" style={{ backgroundColor: "rgba(183, 174, 155, 1)" }}>
             <h2 className="h2 text-center text-white mb-3" style={{ fontWeight: "100" }}>
                 Explore Our Gallery
             </h2>
