@@ -145,12 +145,13 @@ function GalleryFullWidth() {
       {/* Title */}
       <div
         className="container text-center mb-3 mt-3"
+        data-aos="fade-up"
       >
         <h2 className="fw-light m-0">From Our {type}'s' Gallery</h2>
       </div>
 
       {/* Description */}
-      <div className="container text-center mb-3 mt-3">
+      <div className="container text-center mb-3 mt-3" data-aos="fade-up" >
         <p className="mt-2 text-muted">{selectedGallery.description}</p>
       </div>
 
