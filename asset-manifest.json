@@ -1,24 +1,20 @@
 {
   "files": {
-    "main.css": "/Rockparadise/static/css/main.7b6158dd.css",
-    "main.js": "/Rockparadise/static/js/main.8768a37b.js",
+    "main.css": "/Rockparadise/static/css/main.9c98ab71.css",
+    "main.js": "/Rockparadise/static/js/main.a4d49217.js",
     "static/js/453.2dfbef7f.chunk.js": "/Rockparadise/static/js/453.2dfbef7f.chunk.js",
     "static/media/logo.png": "/Rockparadise/static/media/logo.f6a2bb68cdbcf52019ac.png",
     "static/media/insta-icon.png": "/Rockparadise/static/media/insta-icon.ca7ca75e684e7721cc10.png",
     "static/media/fb-icon.png": "/Rockparadise/static/media/fb-icon.636688f04a2761deec6d.png",
     "static/media/twitter-icon.png": "/Rockparadise/static/media/twitter-icon.7e8126798394f02980c4.png",
     "static/media/linkedin-icon.webp": "/Rockparadise/static/media/linkedin-icon.fe4dbe4730a4a1fd82cf.webp",
-    "static/media/slick.svg": "/Rockparadise/static/media/slick.2630a3e3eab21c607e21.svg",
-    "static/media/slick.eot": "/Rockparadise/static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/slick.ttf": "/Rockparadise/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "/Rockparadise/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Rockparadise/index.html",
-    "main.7b6158dd.css.map": "/Rockparadise/static/css/main.7b6158dd.css.map",
-    "main.8768a37b.js.map": "/Rockparadise/static/js/main.8768a37b.js.map",
+    "main.9c98ab71.css.map": "/Rockparadise/static/css/main.9c98ab71.css.map",
+    "main.a4d49217.js.map": "/Rockparadise/static/js/main.a4d49217.js.map",
     "453.2dfbef7f.chunk.js.map": "/Rockparadise/static/js/453.2dfbef7f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7b6158dd.css",
-    "static/js/main.8768a37b.js"
+    "static/css/main.9c98ab71.css",
+    "static/js/main.a4d49217.js"
   ]
 }
