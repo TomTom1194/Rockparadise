@@ -7,18 +7,18 @@ import { useCart } from "../context/CartContext";
 
 function Navbar() {
   const [showDropdown, setShowDropdown] = useState(false);
-  const { cartItems } = useCart();
+  const { totalQuantity } = useCart();
   const dropdownRef = useRef(null);
   const location = useLocation();
 
   const isCategoryActive = location.pathname.startsWith("/productlist");
   const isGalleryActive = location.pathname.startsWith("/gallery");
 
-  // Hàm đóng collapse khi click link
+ 
   const closeNavbar = () => {
     const navbarCollapse = document.getElementById("navbarLinks");
     if (navbarCollapse && navbarCollapse.classList.contains("show")) {
-      // Dùng bootstrap collapse API
+      
       const bsCollapse = window.bootstrap.Collapse.getInstance(navbarCollapse);
       bsCollapse.hide();
     }
@@ -101,9 +101,9 @@ function Navbar() {
             onClick={() => setShowDropdown(!showDropdown)}
           >
             <FaShoppingCart size={24} />
-            {cartItems.length > 0 && (
+            { totalQuantity > 0 && (
               <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                {cartItems.length}
+                { totalQuantity}
               </span>
             )}
           </button>

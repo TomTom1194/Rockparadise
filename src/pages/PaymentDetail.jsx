@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import ConfirmationModal from '../Components/ConfirmationModal'; 
 
 function PaymentDetail() {
-  const { cartItems, totalPrice, clearCart } = useCart();
+  const { cartItems, totalPrice, removePaidItems } = useCart();
   const navigate = useNavigate();
 
   const [formData, setFormData] = useState({
@@ -30,7 +30,7 @@ function PaymentDetail() {
 
   
   const handleConfirmPayment = () => {
-    clearCart();
+    removePaidItems();
     navigate("/payment-success");
     setShowModal(false); 
   };
@@ -111,7 +111,7 @@ function PaymentDetail() {
           {/* Order Summary  */}
           <div className="col-12 col-md-6 order-summary">
             <h5 className="mb-3">Order Summary</h5>
-            {cartItems.map((item) => (
+            {cartItems.filter(item => item.quantity > 0).map((item) => (
               <div
                 key={item.id}
                 className="d-flex mb-3 border-bottom pb-2 align-items-center justify-content-between"

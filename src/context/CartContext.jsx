@@ -46,6 +46,11 @@ export function CartProvider({ children }) {
     );
   };
 
+  const totalQuantity = cartItems.reduce(
+  (sum, item) => sum + item.quantity,
+  0
+);
+
   const totalPrice = cartItems.reduce(
     (sum, item) => sum + item.price * item.quantity,
     0
@@ -59,8 +64,12 @@ export function CartProvider({ children }) {
     setCartItems([]);
   };
 
+  const removePaidItems = () => {
+  setCartItems(prevItems => prevItems.filter(item => item.quantity <= 0));
+};
+
   return (
-    <CartContext.Provider value={{ cartItems, addToCart, updateQuantity, removeFromCart, clearCart, totalPrice }}>
+    <CartContext.Provider value={{ cartItems, addToCart, updateQuantity, removeFromCart, clearCart, totalPrice,  totalQuantity, removePaidItems }}>
       {children}
     </CartContext.Provider>
   );
