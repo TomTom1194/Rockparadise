@@ -130,7 +130,7 @@ function Navbar() {
 
           {/* Mobile Search Icon */}
           <button
-            className="btn btn-link text-dark d-lg-none me-2"
+            className="btn btn-link text-dark d-lg-none ms-auto"
             onClick={() => setShowMobileSearch(true)}
           >
             <FaSearch size={20} />
@@ -176,7 +176,7 @@ function Navbar() {
             boxShadow: "0 2px 6px rgba(0,0,0,0.2)"
           }}
         >
-          <form className="position-relative" onSubmit={handleSearch}>
+          <form className="position-relative fixed-top pt-3" onSubmit={handleSearch}>
             <input
               type="text"
               className="form-control pe-5"
