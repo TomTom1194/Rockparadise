@@ -7,14 +7,14 @@ function Footer() {
   const location = useLocation();
   const isCategoryActive = location.pathname.startsWith("/productlist");
   const isGalleryActive = location.pathname.startsWith("/gallery");
-    const [currentDateTime, setCurrentDateTime] = useState('');
+  const [currentDateTime, setCurrentDateTime] = useState('');
   const [visitorCount, setVisitorCount] = useState(0);
 
     useEffect(() => {
     const updateDateTime = () => {
       const now = new Date();
       const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit' };
-      setCurrentDateTime(now.toLocaleDateString('vi-VN', options));
+      setCurrentDateTime(now.toLocaleDateString('en-US', options));
     };
 
     updateDateTime();

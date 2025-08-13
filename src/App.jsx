@@ -15,6 +15,7 @@ import PaymentDetail from "./pages/PaymentDetail";
 import PaymentCongrat from "./pages/PaymentCongrat";
 import Productlist from "./pages/Productlist";
 import ViewmoreList from "./pages/ViewmoreList";
+import Searchlist from "./pages/Searchlist";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
           <Route path="/payment-success" element={<PaymentCongrat />} />
           <Route path="/productlist/:category" element={<Productlist />} />
           <Route path="/viewmore/:title" element={<ViewmoreList />} />
+           <Route path="/searchlist/:query" element={<Searchlist />} />
         </Routes>
       </main>
 
