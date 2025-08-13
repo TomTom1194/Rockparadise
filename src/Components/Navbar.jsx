@@ -18,7 +18,7 @@ function Navbar() {
     e.preventDefault();
     if (searchTerm.trim()) {
       navigate(`/searchlist/${encodeURIComponent(searchTerm)}`);
-      setSearchTerm("");
+      // setSearchTerm("");
       setShowMobileSearch(false);
     }
   };
