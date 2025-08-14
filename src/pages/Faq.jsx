@@ -20,7 +20,7 @@ function Faq() {
             className="accordion-item mb-3 shadow-sm"
             key={item.id}
             style={{ borderRadius: "8px", overflow: "hidden" }}
-            data-aos="fade-up"
+            data-aos="fade-up" data-aos-delay="200"
           >
             <h2 className="accordion-header" id={`heading-${item.id}`}>
               <button
