@@ -65,14 +65,45 @@ function Cart() {
               {/* Quantity */}
               <div className="col-6 col-md-3">
                 <label className="form-label mb-1">Quantity:</label>
-                <input
-                  type="number"
-                  min="0"
-                  value={item.quantity}
-                  onChange={(e) => updateQuantity(item.id, parseInt(e.target.value))}
-                  className="form-control"
-                  style={{ maxWidth: "80px" }}
-                />
+                     <div
+                    className="input-group input-group-sm mt-1"
+                    style={{ maxWidth: "120px", height:"30px" }}
+                  >
+                    <button
+                      className="btn btn-outline-secondary"
+                      type="button"
+                      onClick={() =>
+                        updateQuantity(item.id, item.quantity - 1)
+                      }
+                      disabled={item.quantity <= 0}
+                      style={{ padding: "0 8px", fontSize: "1.2rem" }}
+                    >
+                      −
+                    </button>
+                    <input
+                      type="number"
+                      className="form-control text-center"
+                      value={item.quantity}
+                      min="0"
+                      onChange={(e) => {
+                        const value = parseInt(e.target.value);
+                        if (!isNaN(value) && value >= 1) {
+                          updateQuantity(item.id, value);
+                        }
+                      }}
+                      style={{ padding: "0", fontSize: "1.2rem" }}
+                    />
+                    <button
+                      className="btn btn-outline-secondary"
+                      type="button"
+                      onClick={() =>
+                        updateQuantity(item.id, item.quantity + 1)
+                      }
+                      style={{ padding: "0 8px", fontSize: "1.2rem" }}
+                    >
+                      +
+                    </button>
+                  </div>
               </div>
 
               {/* Total + Delete */}
