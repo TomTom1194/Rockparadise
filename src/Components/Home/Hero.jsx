@@ -1,7 +1,14 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { Link } from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 function Hero() {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
+  
   return (
     <div id="heroCarousel"
         className="carousel slide full-width-carousel"
@@ -14,9 +21,9 @@ function Hero() {
         <div className="carousel-item active">
           <img src="https://images.unsplash.com/photo-1633934542430-0905ccb5f050?q=80&w=1025&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="d-block w-100" alt="Gemstone 1" style={{ height: "80vh", objectFit: "cover" }} />
           <div className="carousel-caption custom-caption-bottom ">
-            <h2>Discover Rare Gemstones</h2>
-            <p>Elegant. Timeless. Unique.</p>
-            <Link className="btn btn-light" to="/viewmore/BestSeller">Explore</Link>
+            <h2 data-aos="fade-up" data-aos-delay="200">Discover Rare Gemstones</h2>
+            <p data-aos="fade-up" data-aos-delay="300">Elegant. Timeless. Unique.</p>
+            <Link className="btn btn-light" to="/viewmore/BestSeller"  >Explore</Link>
           </div>
         </div>
 
@@ -24,9 +31,9 @@ function Hero() {
         <div className="carousel-item">
           <img src="https://images.unsplash.com/photo-1585960622850-ed33c41d6418?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="d-block w-100" alt="Gemstone 2" style={{ height: "80vh", objectFit: "cover" }} />
           <div className="carousel-caption custom-caption-bottom c">
-            <h2>Luxury Jewelry Collection</h2>
-            <p>Crafted with passion and precision.</p>
-            <Link className="btn btn-light" to="/viewmore/Promotion">Explore</Link>
+            <h2 >Luxury Jewelry Collection</h2>
+            <p >Crafted with passion and precision.</p>
+            <Link className="btn btn-light" to="/viewmore/Promotion" >Explore</Link>
           </div>
         </div>
 

@@ -77,6 +77,9 @@ function Navbar() {
               style={{ fontWeight: "300", gap: "12px", fontSize: "1rem" }}
             >
               <li className="nav-item">
+                <NavLink className="nav-link text-dark" to="/" onClick={closeNavbar}>Home</NavLink>
+              </li>
+              <li className="nav-item">
                 <NavLink className="nav-link text-dark" to="/about" onClick={closeNavbar}>About Us</NavLink>
               </li>
               <li className="nav-item">
