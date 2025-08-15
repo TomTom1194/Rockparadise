@@ -1,16 +1,4 @@
-/* body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-} */
 
 html {
   font-family: "Poppins", sans-serif;
@@ -45,9 +33,9 @@ html {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.3);     /* nền đen mờ */
-  backdrop-filter: blur(5px);              /* hiệu ứng blur */
-  -webkit-backdrop-filter: blur(5px);      /* Safari */
+  background-color: rgba(0, 0, 0, 0.3);     
+  backdrop-filter: blur(5px);              
+  -webkit-backdrop-filter: blur(5px);      
   padding: 20px;
   text-align: center;
   padding: 24px;

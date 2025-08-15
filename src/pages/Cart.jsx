@@ -87,7 +87,7 @@ function Cart() {
                       min="0"
                       onChange={(e) => {
                         const value = parseInt(e.target.value);
-                        if (!isNaN(value) && value >= 1) {
+                        if (!isNaN(value) ) {
                           updateQuantity(item.id, value);
                         }
                       }}
