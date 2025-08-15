@@ -15,14 +15,17 @@ function Searchlist() {
     }, []);
   
 
+  const keywords = searchTerm.split(/\s+|and/).map(k => k.trim()).filter(k => k);
   const filteredData = rockData.filter(item =>
-    item.id.toLowerCase().includes(searchTerm) ||
-    item.name.toLowerCase().includes(searchTerm) ||
-    item.type.toLowerCase().includes(searchTerm) ||
-    item.color.toLowerCase().includes(searchTerm) ||
-    item.brand.toLowerCase().includes(searchTerm) ||
-    item.productType.toLowerCase().includes(searchTerm)
-  );
+  keywords.some(keyword =>
+    item.id.toLowerCase().includes(keyword) ||
+    item.name.toLowerCase().includes(keyword) ||
+    item.type.toLowerCase().includes(keyword) ||
+    item.color.toLowerCase().includes(keyword) ||
+    item.brand.toLowerCase().includes(keyword) ||
+    item.productType.toLowerCase().includes(keyword)
+  )
+);
 
   const [sortOrder, setSortOrder] = useState('default');
 
