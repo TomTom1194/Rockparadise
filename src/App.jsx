@@ -25,6 +25,7 @@ function App() {
       <main style={{backgroundColor: "#ffff"}}>
         <Routes>
           <Route path="/" element={<Home />} />
+          
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/faq" element={<Faq />} />
@@ -37,6 +38,7 @@ function App() {
           <Route path="/productlist/:category" element={<Productlist />} />
           <Route path="/viewmore/:title" element={<ViewmoreList />} />
            <Route path="/searchlist/:query" element={<Searchlist />} />
+           <Route path="*" element={<Home />} />
         </Routes>
       </main>
 
