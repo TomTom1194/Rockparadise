@@ -36,7 +36,6 @@ function Productlist() {
     sortedProducts.sort((a, b) => b.price - a.price);
   }
 
-  const finalProducts = sortedProducts;
 
   return (
     <div className="container py-5 ">
@@ -114,7 +113,7 @@ function Productlist() {
           <div className="overflow-hidden" data-aos="fade-left">
           <SellSection
             title={`Products in ${category}`}
-            products={finalProducts}
+            products={sortedProducts}
             showViewMoreButton={false}
           />
           </div>
