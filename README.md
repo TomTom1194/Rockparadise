@@ -83,7 +83,7 @@ Click below to explore the live version of our project:
 git clone https://github.com/TomTom1194/Rockparadise
 
 # Navigate into the project folder
-cd sky-gaze
+cd rockparadise
 
 # Install dependencies
 npm install
