@@ -5,7 +5,7 @@
 
 ---
 
-## 👥 Group 5 – Collaborators
+## 👥 Group 3 – Collaborators
 
 - **Tang Thien Tan** – Student1634690
 - **Phan Minh Huy** – Student1634681
