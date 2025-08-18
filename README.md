@@ -29,7 +29,7 @@ Click below to explore the live version of our project:
 
 ## 🎥 Demonstration Video
 
-[**Rockparadise Introduction Video**](https://www.youtube.com/watch?v=P4wVIPhe3dM)
+[**Rockparadise Introduction Video**](https://youtu.be/Sx5WRSHBlGk?si=t4AUju8xHRWrg__f)
 
 ---
 
