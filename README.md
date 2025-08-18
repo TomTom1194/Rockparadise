@@ -25,7 +25,7 @@ You can view the complete project report here:
 Click below to explore the live version of our project:  
 [**Rockparadise Website**](https://tomtom1194.github.io/Rockparadise/)
 
-
+---
 
 ## 🎥 Demonstration Video
 
