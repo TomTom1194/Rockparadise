@@ -16,11 +16,13 @@ import PaymentCongrat from "./pages/PaymentCongrat";
 import Productlist from "./pages/Productlist";
 import ViewmoreList from "./pages/ViewmoreList";
 import Searchlist from "./pages/Searchlist";
+import ScrollToTop from "./Components/ScrollToTop";
 
 function App() {
   return (
       <CartProvider>
       <Navbar />
+      <ScrollToTop />
 
       <main style={{backgroundColor: "#ffff"}}>
         <Routes>

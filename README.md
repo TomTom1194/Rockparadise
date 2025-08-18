@@ -16,7 +16,7 @@
 ## 📄 Documentation
 
 You can view the complete project report here:  
-[**eProject Report – Rockparadise**](https://github.com/TomTom1194/Rockparadise/blob/main/document/)
+[**eProject Report – Rockparadise**](https://github.com/TomTom1194/Rockparadise/blob/main/document/Group%203_%20Rockparadise_Student1634690_Tang%20Thien%20Tan.pdf)
 
 ---
 
