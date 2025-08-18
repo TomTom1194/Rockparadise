@@ -8,11 +8,11 @@ function AboutUs() {
     AOS.init({ duration: 1000, once: true });
   }, []);
 
-  [...document.querySelectorAll('*')].forEach(el => {
-  if (el.scrollWidth > document.documentElement.clientWidth) {
-    console.log('Overflow element:', el, 'scrollWidth:', el.scrollWidth, 'clientWidth:', el.clientWidth);
-  }
-});
+//   [...document.querySelectorAll('*')].forEach(el => {
+//   if (el.scrollWidth > document.documentElement.clientWidth) {
+//     console.log('Overflow element:', el, 'scrollWidth:', el.scrollWidth, 'clientWidth:', el.clientWidth);
+//   }
+// });
 
   return (
     <div className="mb-5">

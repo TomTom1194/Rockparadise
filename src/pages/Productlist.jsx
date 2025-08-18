@@ -15,15 +15,15 @@ function Productlist() {
   const { category } = useParams();
   const navigate = useNavigate();
   const [showCategory, setShowCategory] = useState(false);
-  const [navbarHeight, setNavbarHeight] = useState(0);
+  // const [navbarHeight, setNavbarHeight] = useState(0);
   const [sortOrder, setSortOrder] = useState('default');
 
-  useEffect(() => {
-    const navbar = document.querySelector(".navbar");
-    if (navbar) {
-      setNavbarHeight(navbar.offsetHeight);
-    }
-  }, []);
+  // useEffect(() => {
+  //   const navbar = document.querySelector(".navbar");
+  //   if (navbar) {
+  //     setNavbarHeight(navbar.offsetHeight);
+  //   }
+  // }, []);
 
   const filteredProducts = rockData.filter(
     (p) => p.type === category || p.brand === category
