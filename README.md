@@ -65,6 +65,7 @@ Click below to explore the live version of our project:
 
 - **Frontend:** HTML5, CSS3, JavaScript (React.js)
 - **Styling:** Bootstrap5 CSS
+- **Animate On Scroll:** AOS
 - **Deployment:** GitHub Pages
 
 ---
