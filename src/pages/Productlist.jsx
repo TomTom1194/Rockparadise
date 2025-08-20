@@ -80,7 +80,7 @@ function Productlist() {
         </div>
       )}
 
-      <div className="row mt-md-5 ">
+      <div className="row mt-md-5 " >
         {/* Desktop Sidebar */}
         <div
           className="d-none d-md-block col-md-3"
@@ -92,7 +92,7 @@ function Productlist() {
           }}
           data-aos="fade-right"
         >
-          <Category layout="v" />
+          <Category layout="v"  />
         </div>
 
         {/* sort */}

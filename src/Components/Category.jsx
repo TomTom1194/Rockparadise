@@ -34,7 +34,7 @@ function Category({ layout = "horizontal", onCategoryClick }) {
             className={`btn  ${
               isActive ? "btn-dark text-white " : "btn-outline-dark"
             }`}
-            style={{ textTransform: "capitalize", width:"200px" }}
+            style={{ textTransform: "capitalize", width:"190px" }}
             onClick={() => {
               if (onCategoryClick) onCategoryClick(); //close filter onclick
             }}
