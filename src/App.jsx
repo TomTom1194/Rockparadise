@@ -20,32 +20,33 @@ import ScrollToTop from "./Components/ScrollToTop";
 
 function App() {
   return (
-      <CartProvider>
-      <Navbar />
-      <ScrollToTop />
+<CartProvider>
+      <Router>
+        <Navbar />
+        <ScrollToTop />
 
-      <main style={{backgroundColor: "#ffff"}}>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/faq" element={<Faq />} />
-          <Route path="/gallery/:type" element={<Gallery />} />
-          <Route path="/category" element={<Category />} />
-          <Route path="/product/:id" element={<ProductDetail/>} />
-          <Route path="/cart" element={<Cart />} />
-          <Route path="/payment" element={<PaymentDetail/>} />
-          <Route path="/payment-success" element={<PaymentCongrat />} />
-          <Route path="/productlist/:category" element={<Productlist />} />
-          <Route path="/viewmore/:title" element={<ViewmoreList />} />
-           <Route path="/searchlist/:query" element={<Searchlist />} />
-           <Route path="*" element={<Home />} />
-        </Routes>
-      </main>
+        <main style={{ backgroundColor: "#ffff" }}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/faq" element={<Faq />} />
+            <Route path="/gallery/:type" element={<Gallery />} />
+            <Route path="/category" element={<Category />} />
+            <Route path="/product/:id" element={<ProductDetail />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/payment" element={<PaymentDetail />} />
+            <Route path="/payment-success" element={<PaymentCongrat />} />
+            <Route path="/productlist/:category" element={<Productlist />} />
+            <Route path="/viewmore/:title" element={<ViewmoreList />} />
+            <Route path="/searchlist/:query" element={<Searchlist />} />
+            <Route path="*" element={<Home />} />
+          </Routes>
+        </main>
 
-      <Footer />
+        <Footer />
+      </Router>
     </CartProvider>
-
   );
 }
 
