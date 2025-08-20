@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Rockparadise/static/css/main.ce034ea2.css",
+    "main.css": "/Rockparadise/static/css/main.16e46ae2.css",
     "main.js": "/Rockparadise/static/js/main.040834f9.js",
     "static/js/453.2dfbef7f.chunk.js": "/Rockparadise/static/js/453.2dfbef7f.chunk.js",
     "static/media/logo.png": "/Rockparadise/static/media/logo.f6a2bb68cdbcf52019ac.png",
@@ -9,12 +9,12 @@
     "static/media/twitter-icon.png": "/Rockparadise/static/media/twitter-icon.7e8126798394f02980c4.png",
     "static/media/linkedin-icon.webp": "/Rockparadise/static/media/linkedin-icon.fe4dbe4730a4a1fd82cf.webp",
     "index.html": "/Rockparadise/index.html",
-    "main.ce034ea2.css.map": "/Rockparadise/static/css/main.ce034ea2.css.map",
+    "main.16e46ae2.css.map": "/Rockparadise/static/css/main.16e46ae2.css.map",
     "main.040834f9.js.map": "/Rockparadise/static/js/main.040834f9.js.map",
     "453.2dfbef7f.chunk.js.map": "/Rockparadise/static/js/453.2dfbef7f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ce034ea2.css",
+    "static/css/main.16e46ae2.css",
     "static/js/main.040834f9.js"
   ]
 }
