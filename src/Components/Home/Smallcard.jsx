@@ -10,7 +10,7 @@ function SmallCard({ product }) {
         className="text-decoration-none"
         style={{ color: "inherit" }}
       >
-        <div className="card h-100 custom-card-hover">
+        <div className="card h-100 custom-card-hover" >
           <img
             src={product.mainImage}
             alt={`${product.type} ${product.brand}`}
