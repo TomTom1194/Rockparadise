@@ -2,6 +2,9 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import tan from '../images/tan.jpg'
+import huy from '../images/huy.jpg'
+import tuan from '../images/tuan.jpg'
 
 function AboutUs() {
   useEffect(() => {
@@ -48,11 +51,9 @@ function AboutUs() {
       <div className="container overflow-hidden">
         <section className="row align-items-center mb-5">
           <div className="col-md-6" data-aos="fade-right">
-            <h2 className="fw-bold">Our Story</h2>
+            <h2 className="fw-bold">Tang Thien Tan</h2>
             <p>
-              Conceived in the quiet elegance of Vienna’s old quarters, Rock
-              Paradise is a celebration of timeless beauty — where natural stone
-              meets the soul of European craftsmanship.
+             <strong>Student1634690</strong>
             </p>
             <p>
               Each piece is more than adornment; it is a whispered narrative of
@@ -73,7 +74,7 @@ function AboutUs() {
           </div>
           <div className="col-md-6 d-flex justify-content-center" data-aos="fade-left">
             <img
-              src="https://i.pinimg.com/736x/b8/56/5d/b8565de877bbf2406bd9a8b1eadbada7.jpg"
+              src={tan}
               alt="Rock Paradise Atelier"
               className="img-fluid rounded shadow-lg mt-4 mt-md-0"
             />
@@ -85,9 +86,10 @@ function AboutUs() {
       <div className="container overflow-hidden">
         <section className="row align-items-start mb-5">
           <div className="col-md-6 order-md-2" data-aos="fade-left">
-            <h2 className="fw-bold">Swiss Essence</h2>
+            <h2 className="fw-bold">Phan Minh Huy</h2>
             <p>
-              At Rock Paradise, the Swiss essence is not merely a signature — it
+              <strong>Student1634681</strong><br /> <br />
+              — it
               is a philosophy. Rooted in the purity of alpine landscapes and the
               legacy of precision craftsmanship, our creations embody a quiet
               sophistication that transcends time.
@@ -103,15 +105,51 @@ function AboutUs() {
               — refined, resilient, and effortlessly elegant.
             </p>
           </div>
-          <div className="col-md-6 order-md-1" data-aos="fade-right">
+          <div className="col-md-6 d-flex justify-content-center" data-aos="fade-right">
             <img
-              src="https://i.pinimg.com/1200x/77/1d/3b/771d3bd0a99a5bccd424c0171f40dfcf.jpg"
+              src={huy}
               alt="Swiss Essence Rock Paradise"
+              className="img-fluid rounded shadow-lg mt-4 mt-md-0"
+              style={{height:"400px"}}
+            />
+          </div>
+        </section>
+      </div>
+
+            <div className="container overflow-hidden">
+        <section className="row align-items-center mb-5">
+          <div className="col-md-6" data-aos="fade-right">
+            <h2 className="fw-bold">Pham Quoc Tuan</h2>
+            <p>
+             <strong>Student1637695</strong>
+            </p>
+            <p>
+              Each piece is more than adornment; it is a whispered narrative of
+              heritage, emotion, and artistry. We craft with intention, allowing
+              form and texture to speak in subtle tones — never loud, always
+              profound.
+            </p>
+            <p>
+              Inspired by the interplay of shadow and light, our designs embrace
+              contrast: the raw and the refined, the bold and the delicate, the
+              eternal and the ephemeral.
+            </p>
+            <p>
+              At Rock Paradise, we believe luxury lies not in excess, but in
+              essence. Our jewelry is created for those who seek meaning in
+              beauty — and beauty in meaning.
+            </p>
+          </div>
+          <div className="col-md-6 d-flex justify-content-center" data-aos="fade-left">
+            <img
+              src={tuan}
+              alt="Rock Paradise Atelier"
               className="img-fluid rounded shadow-lg mt-4 mt-md-0"
             />
           </div>
         </section>
       </div>
+
     </div>
   );
 }
