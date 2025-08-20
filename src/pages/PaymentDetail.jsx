@@ -42,6 +42,13 @@ function PaymentDetail() {
 
   return (
     <div className="container my-5">
+       <button
+          className="btn btn-outline-secondary  "
+          onClick={() => navigate(-1)}
+          
+        >
+          ← Back
+        </button>
       <h2 className="mb-4 text-center">Payment Details</h2>
       <form onSubmit={handleSubmit}>
         <div className="row g-4">

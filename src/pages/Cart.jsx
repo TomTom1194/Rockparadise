@@ -16,7 +16,7 @@ function Cart() {
     return (
       <div className="container my-5 text-center">
         <h3>Your cart is empty 🛒</h3>
-        <Link to="/" className="btn btn-dark mt-3">
+        <Link to="/productlist/Diamond" className="btn btn-dark mt-3">
           Continue Shopping
         </Link>
       </div>
@@ -38,6 +38,13 @@ function Cart() {
 
   return (
     <div className="container my-5">
+       <button
+          className="btn btn-outline-secondary  "
+          onClick={() => navigate(-1)}
+          
+        >
+          ← Back
+        </button>
       <h2 className="mb-4 text-center">Your Cart</h2>
 
       <div className="row g-4">
