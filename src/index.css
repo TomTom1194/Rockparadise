@@ -168,3 +168,21 @@ input[type="number"] {
   text-overflow: ellipsis;
 }
 
+
+.custom-pagination {
+  text-align: center;
+}
+
+.custom-pagination .swiper-pagination-bullet {
+  background: #32323248;        
+  opacity: 1;
+  margin: 0 6px;           
+  width: 6px;
+  height: 6px;
+  transition: background 0.3s;
+}
+
+.custom-pagination .swiper-pagination-bullet-active {
+  background: #323232;     
+  transform: scale(1.2);   
+}
