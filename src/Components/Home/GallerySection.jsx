@@ -6,7 +6,8 @@ import { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { Pagination } from 'swiper/modules';
+import { Pagination, Navigation } from 'swiper/modules';
+import 'swiper/css/navigation';
 
 function GallerySection() {
   const itemsToShow = galleryData.slice(0, 8);
@@ -21,7 +22,8 @@ function GallerySection() {
         spaceBetween={20}
         grabCursor={true}
         pagination={{ el: '.custom-pagination',clickable: true }}
-        modules={[Pagination]}
+        navigation={true}
+        modules={[Pagination, Navigation]}
         className="mySwiper"
         breakpoints={{
           320: { slidesPerView: 1 },   // mobile

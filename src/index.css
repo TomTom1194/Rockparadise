@@ -168,9 +168,13 @@ input[type="number"] {
   text-overflow: ellipsis;
 }
 
-
+.mySwiper {
+  padding-bottom: 50px; 
+  position: relative;
+}
 .custom-pagination {
   text-align: center;
+  flex: 1;
 }
 
 .custom-pagination .swiper-pagination-bullet {
@@ -186,3 +190,9 @@ input[type="number"] {
   background: #323232;     
   transform: scale(1.2);   
 }
+
+.mySwiper .swiper-button-prev,
+.mySwiper .swiper-button-next {
+  color: #fff;              
+}
+
