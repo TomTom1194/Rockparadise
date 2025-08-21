@@ -48,7 +48,7 @@ function AboutUs() {
       </section>
 
       {/* Brand Story */}
-      <div className="container overflow-hidden">
+      <div className="container ">
         <section className="row align-items-center mb-5">
           <div className="col-md-6" data-aos="fade-right">
             <h2 className="fw-bold">Tang Thien Tan</h2>
@@ -83,7 +83,7 @@ function AboutUs() {
       </div>
 
       {/* Swiss Essence */}
-      <div className="container overflow-hidden">
+      <div className="container ">
         <section className="row align-items-start mb-5">
           <div className="col-md-6 order-md-2" data-aos="fade-left">
             <h2 className="fw-bold">Phan Minh Huy</h2>
@@ -116,7 +116,7 @@ function AboutUs() {
         </section>
       </div>
 
-            <div className="container overflow-hidden">
+            <div className="container ">
         <section className="row align-items-center mb-5">
           <div className="col-md-6" data-aos="fade-right">
             <h2 className="fw-bold">Pham Quoc Tuan</h2>
